@@ -1,0 +1,11 @@
+.nav-link-dropdown {
+  .nav-link-dropdown-content {
+    display: none;
+
+    flex-direction: column;
+  }
+
+  &:hover .nav-link-dropdown-content {
+    display: flex;
+  }
+}

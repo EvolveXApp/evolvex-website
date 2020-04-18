@@ -1,0 +1,9 @@
+.nav-links {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  & > *:not(:last-child) {
+    margin-right: 48px;
+  }
+}
