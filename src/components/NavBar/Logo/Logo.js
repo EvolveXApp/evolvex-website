@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../../assets/images/logo.png";
-import "./styles.scss";
+import styles from "./logo.module.scss";
 
 export default function Logo() {
-  return <img className="logo" src={logo} alt="logo" />;
+  return <img className={styles.logo} src={logo} alt="logo" />;
 }

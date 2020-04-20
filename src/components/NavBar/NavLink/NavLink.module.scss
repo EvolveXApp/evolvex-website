@@ -1,0 +1,19 @@
+@import "../../../config/variables.scss";
+
+.navLink {
+  display: block;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  // font-family: $primaryFontFamily;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.activeNavLink {
+  padding-bottom: 4px;
+  padding-top: 6px;
+  border-bottom: 2px solid transparent;
+}

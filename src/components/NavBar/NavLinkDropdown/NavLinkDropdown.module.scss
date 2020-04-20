@@ -1,0 +1,35 @@
+@import "../NavLink/NavLink.module.scss";
+
+.dropdown {
+  position: relative;
+  .dropdownTitle {
+    display: flex;
+    align-items: center;
+
+    .dropdownArrow {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .dropdownContent {
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    display: none;
+    top: 46px;
+    flex-direction: column;
+    width: 184px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 8px;
+    & > * {
+      padding: 8px;
+    }
+  }
+
+  &:hover .dropdownContent {
+    display: flex;
+  }
+}

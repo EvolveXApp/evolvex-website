@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./style.scss";
-export default function NavLink({ to, title }) {
+import { NavLink as ActiveLink } from "react-router-dom";
+import styles from "./NavLink.module.scss";
+
+export function NavLink({ to, title, ...props }) {
   return (
-    <Link className="nav-link" to={to}>
+    <ActiveLink exact className={styles.navLink} to={to} {...props}>
       {title}
-    </Link>
+    </ActiveLink>
   );
 }

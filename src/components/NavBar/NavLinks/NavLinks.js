@@ -1,21 +1,21 @@
 import React from "react";
-import NavLink from "../NavLink";
+import { ActiveNavLink } from "../NavLink";
 import NavLinkDropdown from "../NavLinkDropdown";
-import "./styles.scss";
+import styles from "./NavLinks.module.scss";
 
 export default function NavLinks() {
   return (
-    <div className="nav-links">
-      <NavLink to="/" title="Home" />
+    <div className={styles.navLinksContainer}>
+      <ActiveNavLink to="/" title="Home" />
       <NavLinkDropdown
         title="About"
         links={[
           { to: "/programoverview", title: "Program Overview" },
-          { to: "/team", title: "Team" },
+          { to: "/team", title: "Our Team" },
         ]}
       />
-      <NavLink to="/resources" title="Resources" />
-      <NavLink to="/contact" title="Contact" />
+      <ActiveNavLink to="/resources" title="Resources" />
+      <ActiveNavLink to="/contact" title="Contact" />
     </div>
   );
 }
