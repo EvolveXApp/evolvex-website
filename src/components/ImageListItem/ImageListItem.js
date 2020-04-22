@@ -1,22 +1,30 @@
 import React from "react";
+import { withStyles } from "@material-ui/core/styles";
+import styles from "./styles";
+
 const ImageListItem = (props) => {
-  const { data } = props;
+  const { data, classes } = props;
   console.log("Data", data);
   return (
-    <div>
+    <div className={classes.container}>
       {data.map((item) => (
-        <div>
+        <div className={classes.item} key={item.position}>
           <img
             src={item.image}
             alt={item.title}
             title={item.title}
-            style={{ width: 100, height: 100 }}
+            className={
+              item.position % 2 === 0 ? classes.flipImage : classes.image
+            }
           />
-          <p>Hello World</p>
+          <div className={item.id % 2 === 0 && classes.flipText}>
+            <p className={classes.title}>{item.title}</p>
+            <p className={classes.description}>{item.description}</p>
+          </div>
         </div>
       ))}
     </div>
   );
 };
 
-export default ImageListItem;
+export default withStyles(styles)(ImageListItem);
