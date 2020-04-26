@@ -1,10 +1,10 @@
 import React from "react";
-import { NavLink } from "./NavLink";
-import styles from "./NavLink.module.scss";
+import { NavBarLink } from "./NavBarLink";
+import styles from "./NavBarLink.module.scss";
 
-export function ActiveNavLink({ to, title }) {
+export function ActiveNavBarLink({ to, title }) {
   return (
-    <NavLink
+    <NavBarLink
       className={`${styles.navLink} ${styles.activeNavLink}`}
       to={to}
       title={title}
