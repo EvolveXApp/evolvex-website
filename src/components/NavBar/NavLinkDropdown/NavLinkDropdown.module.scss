@@ -1,10 +1,11 @@
-@import "../NavLink/NavLink.module.scss";
+@import "../NavBarLink/NavBarLink.module.scss";
 
 .dropdown {
   position: relative;
   .dropdownTitle {
     display: flex;
     align-items: center;
+    padding: 24px 0;
 
     .dropdownArrow {
       width: 18px;
@@ -17,7 +18,7 @@
     transform: translateX(50%);
     right: 50%;
     display: none;
-    top: 46px;
+    top: 71px;
     flex-direction: column;
     width: 184px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -31,5 +32,16 @@
 
   &:hover .dropdownContent {
     display: flex;
+    color: #eeb91f;
+    animation: fadeIn ease 300ms;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }

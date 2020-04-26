@@ -1,10 +1,9 @@
 import React from "react";
-import { NavLink } from "../NavLink";
+import { NavBarLink } from "../NavBarLink";
 import styles from "./NavLinkDropdown.module.scss";
 import dropdownArrow from "../../../assets/icons/white-arrow.png";
 
 export default function NavLinkDropdown({ title, links }) {
-  console.log(styles);
   return (
     <div className={`${styles.navLink} ${styles.dropdown}`}>
       <div className={styles.dropdownTitle}>
@@ -13,7 +12,7 @@ export default function NavLinkDropdown({ title, links }) {
       </div>
       <div className={styles.dropdownContent}>
         {links.map((link) => (
-          <NavLink key={link.to} title={link.title} to={link.to} />
+          <NavBarLink key={link.to} title={link.title} to={link.to} />
         ))}
       </div>
     </div>
