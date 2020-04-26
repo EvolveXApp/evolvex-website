@@ -4,7 +4,6 @@ import styles from "./NavLinkDropdown.module.scss";
 import dropdownArrow from "../../../assets/icons/white-arrow.png";
 
 export default function NavLinkDropdown({ title, links }) {
-  console.log(styles);
   return (
     <div className={`${styles.navLink} ${styles.dropdown}`}>
       <div className={styles.dropdownTitle}>
