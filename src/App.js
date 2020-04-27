@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import Team from "./pages/Team";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/resources" component={Resources} />
           <Route path="/contact" component={Contact} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
