@@ -1,8 +1,10 @@
 .container {
   display: flex;
   color: white;
-  flex: 1 1 42%;
-  justify-content: space-evenly;
+
+  .infoWrapper:not(:last-child) {
+    margin-right: 55px;
+  }
   .infoWrapper {
     display: flex;
     flex-direction: column;
