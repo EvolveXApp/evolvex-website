@@ -1,0 +1,11 @@
+.socialLinksContainer {
+  flex: 1 1 30%;
+  display: flex;
+  align-items: flex-start;
+  .icon {
+    width: 30px;
+  }
+  .link:not(:last-child) {
+    margin-right: 25px;
+  }
+}
