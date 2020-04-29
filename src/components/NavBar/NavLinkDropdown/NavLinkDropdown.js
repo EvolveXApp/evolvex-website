@@ -8,7 +8,11 @@ export default function NavLinkDropdown({ title, links }) {
     <div className={`${styles.navLink} ${styles.dropdown}`}>
       <div className={styles.dropdownTitle}>
         <div className={`${styles.navLink} `}>{title}</div>
-        <img src={dropdownArrow} class={styles.dropdownArrow} />
+        <img
+          src={dropdownArrow}
+          class={styles.dropdownArrow}
+          alt="dropdownarrow"
+        />
       </div>
       <div className={styles.dropdownContent}>
         {links.map((link) => (
