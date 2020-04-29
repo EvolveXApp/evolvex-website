@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  .infoWrapper {
+    display: flex;
+    align-items: center;
+  }
+  p {
+    font-family: "Gilroy";
+  }
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  color: white;
+  margin-right: 15px;
+}

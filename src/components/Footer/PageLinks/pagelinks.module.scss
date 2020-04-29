@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  color: white;
+
+  .infoWrapper:not(:last-child) {
+    margin-right: 55px;
+  }
+  .infoWrapper {
+    display: flex;
+    flex-direction: column;
+
+    .mainLink {
+      margin: 0px 0 10px 0;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+    }
+    .subLink {
+      margin: 0px 0 8px 0;
+      text-decoration: none;
+      color: #f1f1f1;
+      font-size: 16px;
+    }
+
+    .mainLink,
+    .subLink {
+      font-family: Gilroy;
+      &:hover {
+        color: #eeb91f;
+      }
+    }
+  }
+}
