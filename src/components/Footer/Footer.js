@@ -3,6 +3,7 @@ import styles from "./footer.module.scss";
 import Logo from "./Logo";
 import Contact from "./Contact";
 import PageLinks from "./PageLinks";
+import SocialLinks from "./SocialLinks/SocialLinks";
 
 class Footer extends Component {
   render() {
@@ -10,7 +11,12 @@ class Footer extends Component {
       <footer>
         <div className="container">
           <div className={styles.footerContent}>
-            <Logo />
+            <div className={styles.col1}>
+              <div className={styles.logo}>
+                <Logo />
+              </div>
+              <SocialLinks />
+            </div>
             <Contact />
             <PageLinks />
           </div>
