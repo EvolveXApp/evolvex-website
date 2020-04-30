@@ -6,16 +6,17 @@ import styles from "./NavLinks.module.scss";
 export default function NavLinks() {
   return (
     <div className={styles.navLinksContainer}>
-      <ActiveNavBarLink to="/" title="Home" />
+      <ActiveNavBarLink exact to="/" title="Home" />
       <NavLinkDropdown
         title="About"
+        to="/about"
         links={[
           { to: "/programoverview", title: "Program Overview" },
           { to: "/team", title: "Our Team" },
         ]}
       />
-      <ActiveNavBarLink to="/resources" title="Resources" />
-      <ActiveNavBarLink to="/contact" title="Contact" />
+      <ActiveNavBarLink exact to="/resources" title="Resources" />
+      <ActiveNavBarLink exact to="/contact" title="Contact" />
     </div>
   );
 }
