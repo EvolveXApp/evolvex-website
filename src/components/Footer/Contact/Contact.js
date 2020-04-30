@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./contact.module.scss";
-import MapPin from "../../../assets/icons/map-pin.svg";
+import MapPin from "../../../assets/icons/map-pin.png";
 import Phone from "../../../assets/icons/phone.png";
 import Mail from "../../../assets/icons/mail.svg";
 
