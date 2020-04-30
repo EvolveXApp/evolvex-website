@@ -1,16 +1,23 @@
 import React from "react";
-import { NavBarLink } from "../NavBarLink";
+import { NavBarLink, ActiveNavBarLink } from "../NavBarLink";
 import styles from "./NavLinkDropdown.module.scss";
 import dropdownArrow from "../../../assets/icons/white-arrow.png";
 
-export default function NavLinkDropdown({ title, links }) {
+export default function NavLinkDropdown({ title, to, links }) {
   return (
     <div className={`${styles.navLink} ${styles.dropdown}`}>
       <div className={styles.dropdownTitle}>
-        <div className={`${styles.navLink} `}>{title}</div>
+        <ActiveNavBarLink
+          title={title}
+          to={to}
+          onClick={(event) => event.preventDefault()}
+          isActive={(match, location) => {
+            return links.some((link) => link.to === location.pathname);
+          }}
+        />
         <img
           src={dropdownArrow}
-          class={styles.dropdownArrow}
+          className={styles.dropdownArrow}
           alt="dropdownarrow"
         />
       </div>
