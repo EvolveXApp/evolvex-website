@@ -1,0 +1,33 @@
+.container_HeroContent {
+  width: 657px;
+  height: 390px;
+  background: #1a1a1a;
+  background-color: rgba(26, 26, 26, 0.7);
+  border-radius: 3px;
+  position: absolute;
+  top: 250px;
+  left: 70px;
+
+  h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    padding: 64px 63px 16px 46px;
+    .period {
+      color: #eeb91f;
+      font-size: 62px;
+      margin-left: 5px;
+    }
+  }
+  p {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 16px 24px 0px 46px;
+  }
+  h1,
+  p {
+    margin: 0;
+    color: white;
+    font-family: Gilroy;
+  }
+}
