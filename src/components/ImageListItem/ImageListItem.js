@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
 
 const ImageListItem = (props) => {
   const { data, classes } = props;
-  console.log("Data", data);
   const backgroundColours = ["#3671B7", "#ECB71F", "#DE1C54"];
   let colourValue = 0;
   return (
@@ -23,7 +22,7 @@ const ImageListItem = (props) => {
           </div>
           <div
             className={
-              (classes.textContainer, item.id % 2 === 0 && classes.flipText)
+              item.id % 2 === 0 ? classes.flipText : classes.textContainer
             }
           >
             <div className={classes.titleContainer}>

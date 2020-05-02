@@ -16,7 +16,7 @@ const styles = createStyles({
     margin: "50px 0",
     padding: "0px 35px 0px 100px",
     "& img": {
-      transform: `translate(00px, -50px)`,
+      transform: `translate(00px, -30px)`,
     },
   },
   flipImage: {
@@ -25,13 +25,17 @@ const styles = createStyles({
     margin: "50px 0",
     padding: "0px 100px 0px 35px",
     "& img": {
-      transform: `translate(00px, -50px)`,
+      transform: `translate(00px, -30px)`,
     },
     display: "grid",
     order: 2,
   },
+  textContainer: {
+    padding: "0 0 0 300px",
+  },
   flipText: {
     display: "grid",
+    padding: "0 0 0 500px",
     order: 1,
   },
   titleContainer: {
