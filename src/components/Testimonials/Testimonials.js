@@ -1,7 +1,20 @@
 import React from "react";
 const Testimonials = ({ classes, testimonials }) => {
   console.log(testimonials);
-  return <p>Testimonials Page</p>;
+  return (
+    <div>
+      {testimonials.map((testimonial, index) => {
+        return (
+          <div>
+            <img src={testimonial.profile} alt="Profile" />
+            <h2>{testimonial.name}</h2>
+            <p>{testimonial.title}</p>
+            <p>{testimonial.comment}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default Testimonials;
