@@ -1,4 +1,7 @@
 import React from "react";
+import { withStyles } from "@material-ui/core/styles";
+import styles from "./styles";
+
 const Testimonials = ({ classes, testimonials }) => {
   console.log(testimonials);
   return (
@@ -17,4 +20,4 @@ const Testimonials = ({ classes, testimonials }) => {
   );
 };
 
-export default Testimonials;
+export default withStyles(styles)(Testimonials);
