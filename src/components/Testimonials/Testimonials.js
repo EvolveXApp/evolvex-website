@@ -1,5 +1,6 @@
 import React from "react";
-const Testimonials = () => {
+const Testimonials = ({ classes, testimonials }) => {
+  console.log(testimonials);
   return <p>Testimonials Page</p>;
 };
 
