@@ -5,17 +5,24 @@ import styles from "./styles";
 const Testimonials = ({ classes, testimonials }) => {
   console.log(testimonials);
   return (
-    <div>
-      {testimonials.map((testimonial, index) => {
-        return (
-          <div>
-            <img src={testimonial.profile} alt="Profile" />
-            <h2>{testimonial.name}</h2>
-            <p>{testimonial.title}</p>
-            <p>{testimonial.comment}</p>
-          </div>
-        );
-      })}
+    <div className={classes.container}>
+      <div className={classes.testimonials}>
+        {testimonials.map((testimonial, index) => {
+          console.log("Index of test", index);
+          return (
+            <div className={classes.card} key={index}>
+              <img
+                className={classes.profile}
+                src={testimonial.profile}
+                alt={testimonial.name}
+              />
+              <h2 className={classes.name}>{testimonial.name}</h2>
+              <p className={classes.title}>{testimonial.title}</p>
+              <p className={classes.comment}>"{testimonial.comment}"</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
