@@ -10,9 +10,23 @@ const styles = createStyles({
     width: "60vw",
     margin: "0 auto",
   },
+  cardTitle: {
+    fontSize: "5rem",
+    fontWeight: 600,
+    textShadow: "white -2px 1px",
+    color: "#3671B7",
+    textAlign: "center",
+  },
+  OffSet: {
+    color: "#ECB71F",
+  },
+  OffSetSecond: {
+    color: "#DE1C54",
+  },
   card: {
     margin: "0 auto",
-    marginTop: 25,
+    borderRadius: 5,
+    marginTop: 35,
     textAlign: "center",
     width: 300,
     backgroundColor: "white",
