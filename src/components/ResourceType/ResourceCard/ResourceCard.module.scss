@@ -1,0 +1,27 @@
+.container {
+  background-color: black;
+  .name {
+    color: white;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 16px;
+    border-bottom: solid 2px #eeb91f;
+    margin: 0 auto;
+  }
+
+  .items {
+    max-width: 800px;
+    width: 100%;
+    color: white;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 95px 24px;
+    margin: 0 auto;
+  }
+}

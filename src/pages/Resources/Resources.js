@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import ResourceType from "../../components/ResourceType/";
 
 class Resources extends Component {
   render() {
-    return <div>Resources Page </div>;
+    return (
+      <div>
+        <ResourceType />{" "}
+      </div>
+    );
   }
 }
 
