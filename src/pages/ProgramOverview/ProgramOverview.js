@@ -1,8 +1,11 @@
 import React, { Component } from "react";
+import ProgramOverviewHead from "../../components/ProgramOverviewHead";
 
 class ProgramOverview extends Component {
   render() {
-    return <div> Program Overview Page </div>;
+    return <div> 
+        <ProgramOverviewHead />
+       </div>;
   }
 }
 
