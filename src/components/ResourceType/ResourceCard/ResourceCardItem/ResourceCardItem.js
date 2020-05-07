@@ -7,7 +7,7 @@ export default function ResourceCardItem({ title, link }) {
     <div className={styles.container}>
       <div className={styles.title}>{title}</div>
       <div className={styles.link}>{link}</div>
-      <img src={downloadIcon} className={styles.icon} />
+      <img src={downloadIcon} className={styles.icon} alt="download icon" />
     </div>
   );
 }
