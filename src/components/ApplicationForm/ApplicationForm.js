@@ -8,7 +8,7 @@ class ApplicationForm extends Component
     render() {
         return (
           <div className="application-form">
-            <p className="heading">Your Career Awaits You</p>
+            <p className="heading">{this.props.heading}</p>
             <div className="application-form-container">
              
                 <Logo />

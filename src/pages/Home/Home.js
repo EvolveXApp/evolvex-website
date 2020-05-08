@@ -9,7 +9,7 @@ class Home extends Component {
       <div>
         <Hero />
         <WeConnect />
-        <ApplicationForm />
+        <ApplicationForm heading="Your Career Awaits You"/>
       </div>
     );
   }
