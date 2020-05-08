@@ -1,0 +1,59 @@
+.header-heading
+{
+    width: 750px;    
+    height: 54.78px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    
+    color: #FFFFFF;
+}
+
+.header
+{
+    height: 456px;
+    background: #010001;
+}
+
+.period
+{
+    color: #eeb91f;
+    font-size: 62px;
+}
+
+.header-intro
+{
+    width: 642px;
+    height: 95.87px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+   
+    color: #FFFFFF;
+
+    opacity: 0.8;
+}
+
+
+.header-image,
+.image
+{
+    width: 518px;
+    height: 344px;
+   
+}
+
+
+
+.header-container
+{
+    width: 1456px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
