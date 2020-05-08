@@ -1,6 +1,6 @@
-.header
+.header-heading
 {
-    width: 450px;    
+    width: 750px;    
     height: 54.78px;
     font-family: Gilroy;
     font-style: normal;
@@ -11,13 +11,19 @@
     color: #FFFFFF;
 }
 
+.header
+{
+    height: 456px;
+    background: #010001;
+}
+
 .period
 {
     color: #eeb91f;
     font-size: 62px;
 }
 
-.overview-intro
+.header-intro
 {
     width: 642px;
     height: 95.87px;
@@ -33,16 +39,17 @@
 }
 
 
-.overview-image
+.header-image,
+.image
 {
     width: 518px;
     height: 344px;
-    background: url("../../../assets/images/photo-1516905041604-7935af78f572.jpeg");
-    background-size: cover;
-
+   
 }
 
-.overview
+
+
+.header-container
 {
     width: 1456px;
     display: flex;
