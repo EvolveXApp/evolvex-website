@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "../../components/Header";
 
 class ProgramOverview extends Component {
   render() {
@@ -9,6 +8,11 @@ class ProgramOverview extends Component {
                         key market awareness for young and seasoned professionals across a 
                         wide spectrum of industries."  imageSrc={"photo-1516905041604-7935af78f572.jpeg"}/>
        </div>;
+    return (
+      <div className={styles.container}>
+        <Faq />
+      </div>
+    );
   }
 }
 
