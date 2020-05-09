@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import Team from "./pages/Team";
 import Footer from "./components/Footer";
+import ApplicationForm from "./components/ApplicationForm";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/programoverview" component={ProgramOverview} />
           <Route path="/team" component={Team} />
           <Route path="/resources" component={Resources} />
+          <Route path="/applicationForm" component={ApplicationForm} />
           <Route path="/contact" component={Contact} />
         </Switch>
         <Footer />

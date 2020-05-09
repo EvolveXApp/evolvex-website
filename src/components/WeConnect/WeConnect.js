@@ -5,7 +5,7 @@ import styles from "./WeConnect.module.scss";
 
 export default function WeConnect() {
   const info = Cards.map((Card) => (
-    <CardItem image={Card.image} title={Card.title} content={Card.content} />
+    <CardItem image={Card.image} name={Card.name} content={Card.content} />
   ));
 
   return (
