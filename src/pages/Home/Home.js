@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Hero from "../../components/Hero";
 import WeConnect from "../../components/WeConnect";
 import ApplicationForm from "../../components/ApplicationForm";
+import "./style.scss";
 
 class Home extends Component {
   render() {
@@ -9,7 +10,8 @@ class Home extends Component {
       <div>
         <Hero />
         <WeConnect />
-        <ApplicationForm heading="Your Career Awaits You"/>
+        <ApplicationForm headerStyle="border-blue" heading="Your Career Awaits You" />
+        
       </div>
     );
   }
