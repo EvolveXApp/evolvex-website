@@ -45,33 +45,6 @@ const Testimonials = ({ classes, data }) => {
           );
         })}
       </div>
-      {/* <div className={classes.testimonials}>
-        <p className={classes.cardTitle}>They</p>
-        <p className={`${classes.cardTitle} ${classes.OffSet}`}>Love</p>
-        <p className={`${classes.cardTitle} ${classes.OffSetSecond}`}>Us!</p>
-        {testimonials.map((testimonial, index) => {
-          cardValue === 2 ? (cardValue = 0) : cardValue++;
-          return (
-            <div
-              className={classes.card}
-              key={index}
-              style={{
-                boxShadow: `5px 2px 20px ${backgroundColours[cardValue]}`,
-                margin: `${offSetMargins[cardValue]}px 0`,
-              }}
-            >
-              <img
-                className={classes.profile}
-                src={testimonial.profile}
-                alt={testimonial.name}
-              />
-              <h2 className={classes.name}>{testimonial.name}</h2>
-              <p className={classes.title}>{testimonial.title}</p>
-              <p className={classes.comment}>"{testimonial.comment}"</p>
-            </div>
-          );
-        })}
-      </div> */}
     </div>
   );
 };
