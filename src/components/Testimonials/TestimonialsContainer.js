@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Testimonials from "./Testimonials";
-const testimonials = [
+const data = [
   {
     title: "They",
     testimonials: [
@@ -82,7 +82,7 @@ const testimonials = [
 ];
 class TestimonialsContainer extends Component {
   render() {
-    return <Testimonials testimonials={testimonials}></Testimonials>;
+    return <Testimonials data={data}></Testimonials>;
   }
 }
 

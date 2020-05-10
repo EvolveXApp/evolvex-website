@@ -5,10 +5,11 @@ const styles = createStyles({
     backgroundColor: "#111111",
   },
   testimonials: {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr  ",
-    width: "60vw",
-    margin: "0 auto",
+    display: "flex",
+    justifyContent: "center",
+  },
+  section: {
+    margin: "0 15px",
   },
   cardTitle: {
     fontSize: "5rem",
@@ -17,13 +18,8 @@ const styles = createStyles({
     color: "#3671B7",
     textAlign: "center",
   },
-  OffSet: {
-    color: "#ECB71F",
-  },
-  OffSetSecond: {
-    color: "#DE1C54",
-  },
   card: {
+    maxHeight: 400,
     margin: "0 auto",
     borderRadius: 5,
     marginTop: 35,
