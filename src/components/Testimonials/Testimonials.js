@@ -3,8 +3,8 @@ import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles";
 
 const Testimonials = ({ classes, data }) => {
-  console.log("Testimonials", data);
   const backgroundColours = ["#3671B7", "#ECB71F", "#DE1C54"];
+  const offSetMargins = [0, 80, 160];
   let cardValue = -1;
   return (
     <div className={classes.container}>
@@ -12,7 +12,11 @@ const Testimonials = ({ classes, data }) => {
         {data.map((items, index) => {
           cardValue === 2 ? (cardValue = 0) : cardValue++;
           return (
-            <div key={index} className={classes.section}>
+            <div
+              key={index}
+              className={classes.section}
+              style={{ marginTop: `${offSetMargins[cardValue]}px ` }}
+            >
               <h2
                 className={classes.cardTitle}
                 style={{ color: `${backgroundColours[cardValue]}` }}

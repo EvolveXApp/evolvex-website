@@ -7,6 +7,7 @@ const styles = createStyles({
   testimonials: {
     display: "flex",
     justifyContent: "center",
+    paddingBottom: 50,
   },
   section: {
     margin: "0 15px",
