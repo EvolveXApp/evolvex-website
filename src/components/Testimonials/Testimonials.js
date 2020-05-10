@@ -36,9 +36,11 @@ const Testimonials = ({ classes, data }) => {
                     src={testimonial.profile}
                     alt={testimonial.name}
                   />
-                  <h2 className={classes.name}>{testimonial.name}</h2>
-                  <p>{testimonial.title}</p>
-                  <p>"{testimonial.comment}"</p>
+                  <div className={classes.nameContainer}>
+                    <h2 className={classes.name}>{testimonial.name}</h2>
+                  </div>
+                  <p className={classes.title}>{testimonial.title}</p>
+                  <p className={classes.comment}>"{testimonial.comment}"</p>
                 </div>
               ))}
             </div>

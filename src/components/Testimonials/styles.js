@@ -33,6 +33,25 @@ const styles = createStyles({
     width: 125,
     borderRadius: "50%",
   },
+  nameContainer: {
+    margin: "0 auto",
+    maxWidth: 250,
+    borderBottom: "2px solid #d7e3f1",
+  },
+  name: {
+    marginBottom: 5,
+  },
+  title: {
+    margin: 5,
+    fontSize: "0.9rem",
+    color: "#d3d3d3",
+    fontWeight: 500,
+  },
+  comment: {
+    fontSize: "1.05rem",
+    color: "#7b7b7b",
+    fontWeight: 400,
+  },
 });
 
 export default styles;
