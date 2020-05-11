@@ -2,7 +2,6 @@ import React,{Component} from "react";
 import "./contactUs.scss";
 import {ContactUsData} from  "./ContactUsData";
 
-import Map from "../../../assets/icons/map-pin.png";
 
 class ContactUs extends Component
 {

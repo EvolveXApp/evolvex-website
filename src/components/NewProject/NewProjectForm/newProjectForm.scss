@@ -6,9 +6,19 @@
     background: #111111;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
-    justify-content: center;;
+    
 }
 
+.new-project-fields
+{
+    margin-top: 35px;
+    width: 335px;
+}
+
+#field-email
+{
+    width:348px;
+}
 
 .project-textarea
 {
@@ -17,6 +27,12 @@
 
     background: #343434;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    resize:none;
+
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .new-project-type
@@ -27,14 +43,28 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 14px;
     line-height: 17px;
-
+    margin-bottom: 20px;
     color: rgba($color: #F1F1F1, $alpha: 0.2);
     font-family: Gilroy;
     font-style: normal;
     font-weight: normal;
+    border: none;
+    padding-left: 5px;
 }
 
-.field-text
+select
+{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+}
+
+select::-ms-expand
+{
+    display: none;
+}
+
+.text-style
 {
     font-family: Gilroy;
     font-style: normal;
@@ -43,6 +73,28 @@
     line-height: 22px;
     margin: 0;
     color: #F1F1F1;
+    padding-bottom: 8px;
+    height: 22.09px;
 
     opacity: 0.3;
+}
+
+.text-fields
+{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.new-project-form-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project-resume
+{
+    margin-top: 40px;
+    justify-content: space-evenly;
 }

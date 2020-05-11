@@ -7,21 +7,24 @@ class NewProjectForm extends Component
         return (
         <form className="new-project-form">
             <div className="new-project-form-container">
-                <input className="fields" type="text" value="Name" readOnly />
-                <div>
-                <p className="field-text"> Project Type</p>
-                <select className="new-project-type">
-                    <option value="" disabled selected>Select All That Apply</option>
-
-                </select>    
+                <div className="text-fields">
+                <input className="new-project-fields" type="text" value="Name" readOnly />
+                <input className="new-project-fields" id="field-email" type="text" value="Email" readOnly />
+                <input className="new-project-fields" type="text" value="Phone" readOnly />
+                <input className="new-project-fields" type="text" value="Company Name" readOnly />
                 </div>
-                <input className="fields" type="text" value="Email" readOnly />
-                <div>
-                <p className="field-text">Tell Us About Your Project</p>
+
+                <div className="project-resume">
+                <p className="text-style"> Project Type</p>
+                <select  className="new-project-type" >
+                    <option value="" disabled selected>Select All That Apply</option>
+                </select>
+                
+                <p className="text-style">Tell Us About Your Project</p>
                 <textarea className="project-textarea"></textarea>
                 </div>
-                <input className="fields" type="text" value="Phone" readOnly />
-                <input className="fields" type="text" value="Company Name" readOnly />
+                
+                
                 
             </div>
            

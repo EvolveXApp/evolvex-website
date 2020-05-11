@@ -12,7 +12,7 @@ class Contact extends Component {
          means our program is thriving. Give us a call or text message instead."  imageSrc={"photo-1574315042617-f84e1847848a.jpeg"}/>
         <NewProject />
         
-        <ApplicationForm headerStyle="border-yellow" heading="Your Career Starts Here"/>
+        <ApplicationForm  headerStyle="border-yellow" heading="Your Career Starts Here"/>
         
 
       </div>;
