@@ -1,9 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import styles from "./styles";
+import { withStyles } from "@material-ui/core/styles";
+const Team = ({ classes, data }) => {
+  console.log("Data", data);
+  return (
+    <>
+      <h2>Meet the team</h2>
+      <div></div>
+    </>
+  );
+};
 
-class Team extends Component {
-  render() {
-    return <div>Team Page </div>;
-  }
-}
-
-export default Team;
+export default withStyles(styles)(Team);
