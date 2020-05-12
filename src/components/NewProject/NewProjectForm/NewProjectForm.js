@@ -8,10 +8,10 @@ class NewProjectForm extends Component
         <form className="new-project-form">
             <div className="new-project-form-container">
                 <div className="text-fields">
-                <input className="new-project-fields" type="text" value="Name" readOnly />
-                <input className="new-project-fields" id="field-email" type="text" value="Email" readOnly />
-                <input className="new-project-fields" type="text" value="Phone" readOnly />
-                <input className="new-project-fields" type="text" value="Company Name" readOnly />
+                <input className="new-project-fields" type="text" value="" placeholder="Name" readOnly />
+                <input className="new-project-fields" id="field-email" type="text" value="" placeholder="Email" readOnly />
+                <input className="new-project-fields" type="text" value="" placeholder="Phone" readOnly />
+                <input className="new-project-fields" type="text" value="" placeholder="Company Name" readOnly />
                 </div>
 
                 <div className="project-resume">
