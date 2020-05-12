@@ -4,8 +4,6 @@ import WeConnect from "../../components/WeConnect";
 import ApplicationForm from "../../components/ApplicationForm";
 import ImageList from "../../components/ImageList";
 import Testimonials from "../../components/Testimonials";
-import "./style.scss";
-
 class Home extends Component {
   render() {
     return (
@@ -14,8 +12,7 @@ class Home extends Component {
         <ImageList />
         <WeConnect />
         <Testimonials />
-        <ApplicationForm headerStyle="border-blue" heading="Your Career Awaits You" />
-        
+        <ApplicationForm />
       </div>
     );
   }
