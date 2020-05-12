@@ -1,32 +1,57 @@
 import React,{Component} from "react";
 import "./form.scss";
+import ViewResourcesForm from "../ViewResourcesForm";
 
 class SignUpForm extends Component
 {
-    render(){
-        return(
-            <form className="form">
-                <div className="form-container">
-                    <input className="fields" type="text" value="Name" readOnly />
-                    <input className="fields" type="text" value="Portfolio" readOnly />
-                    <input className="fields" type="text" value="Email" readOnly />
-                    
-                    <input className="fields" type="text" value="LinkedIn" readOnly />
-                    <input className="fields" type="text" value="Phone" readOnly />
-                    <input className ="buttons" type="button" value="Resume / CV" />
-                    <input className="fields" type="text" value="Profession" readOnly />
-                    
-                    <input className="buttons" type="button" value="Cover Letter" />
+    constructor(props)
+    {
+        super(props);
+        this.isFormNotSubmitted = this.handleFormSubmission.bind(this);
+        this.state = {isFormNotSubmitted: true};
+    }
 
-                    
+    handleFormSubmission()
+    {
+        this.setState({isFormNotSubmitted: false});
+    }
+
+    render(){
+        const isFormNotSubmitted = this.state.isFormNotSubmitted;
+        
+        if(isFormNotSubmitted)
+        {
+            return(
+                <div className="form-wrapper">
+                        
+                    <form className="form">
+                        <div className="form-container">
+                            <input className="fields" type="text" value="" placeholder="Name" readOnly />
+                            <input className="fields" type="text" value="" placeholder="Portfolio" readOnly />
+                            <input className="fields" type="text" value="" placeholder="Email" readOnly />
+                            
+                            <input className="fields" type="text" value="" placeholder="LinkedIn" readOnly />
+                            <input className="fields" type="text" value="" placeholder="Phone" readOnly />
+                            <input className ="buttons" type="button" value="Resume / CV" />
+                            <input className="fields" type="text" value="" placeholder="Profession" readOnly />
+                            
+                            <input className="buttons" type="button" value="Cover Letter" />
+                            
+                            
+                        </div>   
+                        <input type="button" className="submitButton" value="Submit" onClick ={() => this.handleFormSubmission()}/>
+                </form>
+                        
                 </div>
-               
-                <input className="submitButton" type="submit" value="Submit" />
-                  
-                
-            </form>
-        );
+            );
+        }
+        else
+        {
+            return(
+                <ViewResourcesForm />
+            );
+        }
     }
 }
-
 export default SignUpForm;
+
