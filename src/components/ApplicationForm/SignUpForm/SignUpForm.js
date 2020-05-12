@@ -1,7 +1,6 @@
 import React,{Component} from "react";
 import "./form.scss";
 import ViewResourcesForm from "../ViewResourcesForm";
-import Form from "./Form";
 
 class SignUpForm extends Component
 {
@@ -25,8 +24,23 @@ class SignUpForm extends Component
             return(
                 <div className="form-wrapper">
                         
-                    <Form />
-                    <button className="submitButton" onClick ={() => this.handleFormSubmission()} > Submit</button>
+                    <form className="form">
+                        <div className="form-container">
+                            <input className="fields" type="text" value="" placeholder="Name" readOnly />
+                            <input className="fields" type="text" value="" placeholder="Portfolio" readOnly />
+                            <input className="fields" type="text" value="" placeholder="Email" readOnly />
+                            
+                            <input className="fields" type="text" value="" placeholder="LinkedIn" readOnly />
+                            <input className="fields" type="text" value="" placeholder="Phone" readOnly />
+                            <input className ="buttons" type="button" value="Resume / CV" />
+                            <input className="fields" type="text" value="" placeholder="Profession" readOnly />
+                            
+                            <input className="buttons" type="button" value="Cover Letter" />
+                            
+                            
+                        </div>   
+                        <input type="button" className="submitButton" value="Submit" onClick ={() => this.handleFormSubmission()}/>
+                </form>
                         
                 </div>
             );
