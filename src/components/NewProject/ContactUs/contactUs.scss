@@ -1,0 +1,40 @@
+.contact-icon
+{
+    width: 24px;
+    height: 24px;
+}
+
+.contact-icon-description
+{
+    
+    height: 21.75px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    color: #F1F1F1;
+    margin-left: 20px;
+}
+
+
+.contact-wrapper
+{
+    width: 376px;
+    height: 60px;
+    border: 2px solid #F1F1F1;
+    box-sizing: border-box;
+    margin-top: 32px;
+    
+    
+}
+
+.wrap 
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 48px;
+    margin-top: 17px;
+    
+}

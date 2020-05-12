@@ -1,0 +1,24 @@
+.title
+{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 64px;
+    padding-bottom: 8px;
+    width: 420px;
+    height: 56px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid 4px #EEB91F;
+    color:#F1F1F1;
+}
+
+.new-project-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+

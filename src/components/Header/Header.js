@@ -16,8 +16,8 @@ class Header extends Component
                         
                     </p>  
                 </div>    
-                <div className="header-image">
-                    <img src={require("../../assets/images/"+ this.props.imageSrc)} className="image"/>
+                <div className="header-image" id={this.props.imageDimensions}>
+                    <img src={require("../../assets/images/"+ this.props.imageSrc)} alt="" className="image" />
                 </div>
             </div>        
         </div>    
