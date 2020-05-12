@@ -10,7 +10,7 @@ class ContactUs extends Component
           <div className ="contact-us">  
             
             {ContactUsData.map((data)=> (
-                <div className = "contact-wrapper">
+                <div key={data.id} className = "contact-wrapper">
                     <div className="wrap">
                         <img alt="icon" src={data.imgSrc} className="contact-icon" />
                         <p className="contact-icon-description">{data.description}</p>

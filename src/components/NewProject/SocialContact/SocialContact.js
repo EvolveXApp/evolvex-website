@@ -8,7 +8,7 @@ class SocialContact extends Component
         return (
           <div className = "social-links-container">
               {SocialLinks.map((images) =>
-                (<img src={images.imgSrc} className="social-links" alt="socialLinks"/>)
+                (<img key = {images.id} src={images.imgSrc} className="social-links" alt="socialLinks"/>)
               
               )}  
             
