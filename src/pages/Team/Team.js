@@ -7,7 +7,7 @@ const Team = ({ classes, data }) => {
   return (
     <>
       <h2>Meet the team</h2>
-      <div>
+      <div className={classes.teams}>
         {data.map((member, index) => (
           <TeamCard member={member} key={index} />
         ))}
