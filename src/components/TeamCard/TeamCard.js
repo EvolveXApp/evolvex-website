@@ -15,8 +15,8 @@ const TeamCard = ({ classes, member }) => {
         }}
       >
         <div className={classes.textContainer}>
-          <h2 className={classes.text}>{member.name}</h2>
-          <p className={classes.text}>{member.title}</p>
+          <h2 className={`${classes.text} ${classes.name}`}>{member.name}</h2>
+          <p className={`${classes.text} ${classes.title}`}>{member.title}</p>
         </div>
         <img
           src={member.profileImage}
@@ -24,16 +24,16 @@ const TeamCard = ({ classes, member }) => {
           className={classes.profileImage}
         />
       </div>
-      <svg width="220" height="210" className={classes.trapezoid}>
+      <svg width="230" height="260" className={classes.trapezoid}>
         <path
           fill="#3671B7"
-          strokeWidth="10"
+          strokeWidth="7"
           strokeLinejoin="round"
           stroke="#3671B7"
           d="M 10,10
-            L 200,120
-            L 200,200
-            L 10,200
+            L 225,120
+            L 225,250
+            L 10,250
             L 10,10
             Z
         "
