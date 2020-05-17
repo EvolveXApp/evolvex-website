@@ -30,11 +30,11 @@ const styles = createStyles({
     position: "relative",
   },
   profileImage: {
-    margin: "20px 0",
+    margin: "30px 0",
     borderRadius: "50%",
     zIndex: "2",
-    width: 200,
-    height: 200,
+    width: 175,
+    height: 175,
     boxShadow: "5px 5px 20px black",
   },
   trapezoid: {

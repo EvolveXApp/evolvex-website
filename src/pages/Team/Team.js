@@ -6,7 +6,7 @@ const Team = ({ classes, data }) => {
   console.log("Data", data);
   return (
     <>
-      <h2>Meet the team</h2>
+      <h2 className={classes.title}>Meet the team</h2>
       <div className={classes.teams}>
         {data.map((member, index) => (
           <TeamCard member={member} key={index} />
