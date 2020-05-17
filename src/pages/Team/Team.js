@@ -3,7 +3,6 @@ import TeamCard from "../../components/TeamCard";
 import styles from "./styles";
 import { withStyles } from "@material-ui/core/styles";
 const Team = ({ classes, data }) => {
-  console.log("Data", data);
   return (
     <>
       <h2 className={classes.title}>Meet the team</h2>
