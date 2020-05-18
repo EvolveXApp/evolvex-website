@@ -22,12 +22,22 @@ const styles = createStyles({
     fontWeight: 400,
     color: "#c1d2ee",
   },
+  mouseOver: {
+    margin: 0,
+  },
   profile: {
     display: "flex",
     justifyContent: "space-around",
     height: 250,
     alignItems: "flex-end",
     position: "relative",
+  },
+  profileMOver: {
+    display: "flex",
+    justifyContent: "space-around",
+    background: "#3671B7",
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
   },
   profileImage: {
     margin: "30px 0",
@@ -37,6 +47,13 @@ const styles = createStyles({
     height: 175,
     boxShadow: "5px 5px 20px black",
   },
+  profileImageMOver: {
+    borderRadius: "50%",
+    width: 100,
+    height: 100,
+    boxShadow: "5px 5px 20px black",
+    transform: "translate(0, -20%)",
+  },
   trapezoid: {
     position: "absolute",
     bottom: -15,
@@ -44,7 +61,22 @@ const styles = createStyles({
   },
   textContainer: {
     zIndex: "2",
-    margin: "15px 0",
+  },
+  textContainerMOver: {
+    zIndex: "2",
+    margin: "10px 0",
+  },
+  description: {
+    textAlign: "center",
+    color: "#c1d2ee",
+    margin: "10px auto",
+    maxWidth: "75%",
+    maxHeight: 125,
+    overflowY: "scroll",
+    "&::-webkit-scrollbar": {
+      width: 0,
+      background: "transparent",
+    },
   },
 });
 
