@@ -17,7 +17,6 @@ exports.components = {
   "component---src-pages-resources-resources-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\src\\pages\\Resources\\Resources.js"))),
   "component---src-pages-team-index-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\src\\pages\\Team\\index.js"))),
   "component---src-pages-team-style-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\src\\pages\\Team\\style.js"))),
-  "component---src-pages-team-styles-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\src\\pages\\Team\\styles.js"))),
   "component---src-pages-team-team-container-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\src\\pages\\Team\\TeamContainer.js"))),
   "component---src-pages-team-team-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\src\\pages\\Team\\Team.js")))
 }

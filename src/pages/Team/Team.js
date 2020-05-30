@@ -1,6 +1,6 @@
 import React from "react";
 import TeamCard from "../../components/TeamCard";
-import styles from "./styles";
+import styles from "./style";
 import { withStyles } from "@material-ui/core/styles";
 const Team = ({ classes, data }) => {
   return (
