@@ -14,6 +14,8 @@ exports.components = {
   "component---src-pages-resources-resources-js": () => import("./../src/pages/Resources/Resources.js" /* webpackChunkName: "component---src-pages-resources-resources-js" */),
   "component---src-pages-team-index-js": () => import("./../src/pages/Team/index.js" /* webpackChunkName: "component---src-pages-team-index-js" */),
   "component---src-pages-team-style-js": () => import("./../src/pages/Team/style.js" /* webpackChunkName: "component---src-pages-team-style-js" */),
+  "component---src-pages-team-styles-js": () => import("./../src/pages/Team/styles.js" /* webpackChunkName: "component---src-pages-team-styles-js" */),
+  "component---src-pages-team-team-container-js": () => import("./../src/pages/Team/TeamContainer.js" /* webpackChunkName: "component---src-pages-team-team-container-js" */),
   "component---src-pages-team-team-js": () => import("./../src/pages/Team/Team.js" /* webpackChunkName: "component---src-pages-team-team-js" */)
 }
 
