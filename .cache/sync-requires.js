@@ -5,7 +5,6 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\.cache\\dev-404-page.js"))),
   "component---src-pages-contact-contact-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\src\\pages\\Contact\\Contact.js"))),
   "component---src-pages-contact-index-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\src\\pages\\Contact\\index.js"))),
   "component---src-pages-home-home-js": hot(preferDefault(require("C:\\Users\\Jasmine Kaur\\Desktop\\evolvex-website\\src\\pages\\Home\\Home.js"))),

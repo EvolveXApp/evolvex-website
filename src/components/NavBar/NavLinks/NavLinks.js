@@ -9,14 +9,14 @@ export default function NavLinks() {
       <ActiveNavBarLink exact to="/" title="Home" />
       <NavLinkDropdown
         title="About"
-        to="/about"
+        to="/About"
         links={[
-          { to: "/programoverview", title: "Program Overview" },
-          { to: "/team", title: "Our Team" },
+          { to: "/ProgramOverview", title: "Program Overview" },
+          { to: "/Team", title: "Our Team" },
         ]}
       />
-      <ActiveNavBarLink exact to="/resources" title="Resources" />
-      <ActiveNavBarLink exact to="/contact" title="Contact" />
+      <ActiveNavBarLink exact to="/Resources" title="Resources" />
+      <ActiveNavBarLink exact to="/Contact" title="Contact" />
     </div>
   );
 }
