@@ -11,6 +11,12 @@ class NavBar extends Component {
           <nav className="nav">
             <Logo />
             <NavLinks />
+
+            <div className="nav_icon" data-state="showing">
+              <div className="nav_icon_lines nav_icon_topline"></div>
+              <div className="nav_icon_lines nav_icon_midline"></div>
+              <div className="nav_icon_lines nav_icon_bottomline"></div>
+            </div>
           </nav>
         </div>
       </div>
