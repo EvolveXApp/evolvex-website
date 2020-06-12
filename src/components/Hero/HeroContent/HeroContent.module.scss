@@ -1,13 +1,10 @@
 .container_HeroContent {
-  width: 657px;
-  height: 390px;
-  background: #1a1a1a;
+  width: 650px;
+  min-height: 390px;
   background-color: rgba(26, 26, 26, 0.7);
   border-radius: 3px;
-  position: absolute;
-  top: 250px;
-  left: 70px;
-  padding: 64px 63px 16px 46px;
+  position: relative;
+  padding: 60px 50px;
 
   h1 {
     font-weight: bold;
@@ -30,5 +27,12 @@
     color: white;
     font-family: Gilroy;
     margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container_HeroContent {
+    // adjust it
+    width: 80%;
   }
 }

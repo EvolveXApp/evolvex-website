@@ -1,18 +1,13 @@
 .btnContainer {
-  width: 178px;
   background-color: #2f74b9;
-  position: relative;
-  left: 7%;
-  top: 6%;
-
-  .btnContent {
-    color: white;
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 19px;
-    text-align: center;
-    padding: 14px 9px 10px 9px;
-  }
+  border: none;
+  outline: none;
+  color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  text-align: center;
+  padding: 15px 50px;
 }
