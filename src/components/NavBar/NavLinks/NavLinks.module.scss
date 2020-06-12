@@ -7,3 +7,10 @@
     margin-right: 48px;
   }
 }
+
+@media (max-width: 500px) {
+  // suggest to max-width 700px as hamburger menu is stuck
+  .navLinksContainer {
+    display: none;
+  }
+}
