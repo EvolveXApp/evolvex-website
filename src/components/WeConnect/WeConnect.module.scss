@@ -14,12 +14,33 @@
 
 .cardItemContainer {
   display: flex;
-  justify-content: space-around;
-  margin-top: 84px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 85px auto 8vw;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
 }
 
 .textUnderline {
   padding-bottom: 8px;
   border-bottom: solid 4px #3074ba;
   width: 420px;
+}
+
+@media (max-width: 500px) {
+  .heading {
+    width: 80%;
+  }
+}
+@media (max-width: 900px) {
+  .cardItemContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cardItemContainer {
+    padding: 0px 5vw;
+  }
 }

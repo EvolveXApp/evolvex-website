@@ -7,7 +7,7 @@ export function CardItem({ image, name, content }) {
       <div className={styles.imageContainer}>
         <img alt="icon" className={styles.image} src={image} />
       </div>
-      <h2> {name}</h2>
+      <h2>{name}</h2>
       <p>{content} </p>
     </div>
   );
