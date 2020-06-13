@@ -4,7 +4,40 @@
   .nav {
     display: flex;
     justify-content: space-between;
-    height: 72px;
     align-items: center;
+    padding: 20px 4vw;
+  }
+  .nav_icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  .nav_icon_topline {
+    top: 20%;
+  }
+  .nav_icon_midline {
+    top: 50%;
+  }
+  .nav_icon_bottomline {
+    top: 80%;
+  }
+  .nav_icon_lines {
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-container {
+    .nav_icon {
+      display: block;
+    }
   }
 }
