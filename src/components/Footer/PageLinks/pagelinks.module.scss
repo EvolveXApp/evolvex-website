@@ -1,10 +1,25 @@
 .container {
-  display: flex;
+  display: grid;
+  grid-template-areas: "home about resources contact";
   color: white;
+  width: 100%;
 
-  .infoWrapper:not(:last-child) {
-    margin-right: 55px;
+  .infoWrapper:nth-child(1) {
+    grid-area: home;
   }
+
+  .infoWrapper:nth-child(2) {
+    grid-area: about;
+  }
+
+  .infoWrapper:nth-child(3) {
+    grid-area: resources;
+  }
+
+  .infoWrapper:nth-child(4) {
+    grid-area: contact;
+  }
+
   .infoWrapper {
     display: flex;
     flex-direction: column;
@@ -29,5 +44,20 @@
         color: #eeb91f;
       }
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    grid-template-areas:
+      "home about"
+      "resources contact";
+    gap: 4vw 4vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: fit-content;
   }
 }
