@@ -11,14 +11,18 @@ class Footer extends Component {
       <footer>
         <div className="container">
           <div className={styles.footerContent}>
-            <div className={styles.col1}>
-              <div className={styles.logo}>
-                <Logo />
-              </div>
+            <div className={styles.logo}>
+              <Logo />
+            </div>
+            <div className={styles.footer_socialLinks}>
               <SocialLinks />
             </div>
-            <Contact />
-            <PageLinks />
+            <div className={styles.footer_contact}>
+              <Contact />
+            </div>
+            <div className={styles.footer_pageLinks}>
+              <PageLinks />
+            </div>
           </div>
         </div>
       </footer>

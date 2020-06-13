@@ -2,12 +2,58 @@ footer {
   background: black;
 
   .footerContent {
-    display: flex;
-    justify-content: space-between;
-    height: 248px;
-    align-items: center;
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+      "logo contact links"
+      "socicon contact links";
+    gap: 2vw 4vw;
+    padding: 45px 4vw;
     .logo {
-      margin-bottom: 25px;
+      grid-area: logo;
+    }
+    .footer_socialLinks {
+      grid-area: socicon;
+    }
+    .footer_contact {
+      grid-area: contact;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer_pageLinks {
+      grid-area: links;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  footer .footerContent {
+    grid-template-areas:
+      "logo links"
+      "contact links"
+      "socicon links";
+  }
+}
+@media (max-width: 700px) {
+  footer .footerContent {
+    padding: 25px 8vw;
+    grid-template-areas:
+      "logo"
+      "contact"
+      "socicon";
+    .footer_pageLinks {
+      display: none;
+    }
+
+    .footer_contact,
+    .footer_socialLinks,
+    .logo {
+      width: fit-content;
+      justify-self: center;
     }
   }
 }
