@@ -1,24 +1,26 @@
 import React, { Component } from "react";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 import NavLinks from "./NavLinks";
 import Logo from "./Logo";
+import NavIcon from "../NavIcon";
+import NavSideBar from "../NavSideBar/NavSideBar";
 
 class NavBar extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
-      <div className="nav-container">
-        <div className="container">
-          <nav className="nav">
+      <div className={styles.nav_container}>
+        <div className={styles.container}>
+          <nav className={styles.nav}>
             <Logo />
             <NavLinks />
-
-            <div className="nav_icon" data-state="showing">
-              <div className="nav_icon_lines nav_icon_topline"></div>
-              <div className="nav_icon_lines nav_icon_midline"></div>
-              <div className="nav_icon_lines nav_icon_bottomline"></div>
-            </div>
+            <NavIcon />
           </nav>
         </div>
+        <NavSideBar />
       </div>
     );
   }

@@ -1,0 +1,47 @@
+.container {
+  padding: 110px 25px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  right: -70vw;
+  z-index: 999;
+  height: 100vh;
+  width: 70vw;
+  min-width: 270px;
+
+  transition: right 0.3s ease-out;
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    * {
+      margin-bottom: 5px;
+    }
+  }
+
+  .mainNavLink,
+  .subNavLink {
+    text-decoration: none;
+    color: white;
+  }
+
+  .mainNavLink {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 3px 0px;
+    border-bottom: 4px solid #eeb91f;
+  }
+  .subNavLink {
+    font-size: 18px;
+  }
+  > * {
+    margin-bottom: 40px;
+  }
+}
