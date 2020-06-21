@@ -1,10 +1,12 @@
 .wrapper {
   //   margin-top: 65px;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
 }
+
 .heading {
   font-family: "Gilroy";
   font-style: normal;
@@ -24,4 +26,11 @@
 .containerForQnAns {
   display: flex;
   justify-content: space-around;
+}
+
+
+@media (max-width:900px) {
+  .container {
+    text-align: center;
+  }
 }
