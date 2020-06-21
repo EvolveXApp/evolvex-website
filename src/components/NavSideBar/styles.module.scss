@@ -12,7 +12,6 @@
   height: 100vh;
   width: 70vw;
   min-width: 270px;
-
   transition: right 0.3s ease-out;
 
   .aboutContainer {
@@ -38,10 +37,18 @@
     padding: 3px 0px;
     border-bottom: 4px solid #eeb91f;
   }
+
   .subNavLink {
     font-size: 18px;
   }
-  > * {
+
+  >* {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width:800px) {
+  .container {
+    display: none
   }
 }
