@@ -15,7 +15,12 @@ export default function Faq() {
       <div className={styles.containerForQnAns}>
         <div className={styles.wrapper}>
           {FaqData.map((data, index) => (
-            <FaqCard qn={data.question} onClick={() => setCurrent(index)} />
+            <FaqCard
+              isCurrent={index === current}
+              ans={data.answer}
+              qn={data.question}
+              onClick={() => setCurrent(index)}
+            />
           ))}
         </div>
         <div>

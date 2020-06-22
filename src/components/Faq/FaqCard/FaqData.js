@@ -15,7 +15,7 @@ export const FaqData = [
     id: 3,
     question: "Do I work from home or work from your office?",
     answer:
-      "Giving our interns the flexibility to work from home has increased productivity. We will host in person and online community events, training and workships which you are welcome to attend to further your experience and education, most of them are online in video calls.",
+      "Giving our interns the flexibility to work from home has increased productivity. We will host in person and online community events, training and workshops which you are welcome to attend to further your experience and education, most of them are online in video calls.",
   },
   {
     id: 4,
@@ -26,21 +26,25 @@ export const FaqData = [
   {
     id: 5,
     question: "What are some of the benefits of the program?",
-    answer: "",
+    answer:
+      "You will receive over the shoulder mentorship from our award winning cam- paign, senior partners. You not only gain web development experience at an agency level, but also learn how to structure a deal from a business, legal, marketing and design perspective. We equip you with real-world re- sources and education that are not typically taught in school, so you can fast track your career.",
   },
   {
     id: 6,
     question: "What kind of resources /support do you offer?",
-    answer: "",
+    answer:
+      "After completing three months (total 360 hours) of the Evolve X internship, you will have priority for potential employment with Evolve Branding and within the businesses you are exposed to in the program, over other applicants.Some benefits include working from home, Select your own hours, Over the shoulder training and Option to work on a contract basis per project",
   },
   {
     id: 7,
     question: "What are the career opportunities?",
-    answer: "",
+    answer:
+      "You will receive over the shoulder mentorship from our award winning senior partners. You not only gain design experience at an agency level, but also learn the following skill sets \n 1. How to structure a deal from a business, legal, marketing perspective \n 2. We equip you with real-world resources and education that are not typically taught in school \n 3. The necessities of brand guidelines documents and the value of key design, communication and team building skills.\n",
   },
   {
     id: 7,
     question: "What are the next steps",
-    answer: "",
+    answer:
+      "Once you have accepted to participate in this program, the selected can- didates will be sent a formal letter of engagement to officially begin your Evolve X internship. Once you have accepted to participate in this program, the selected can- didates will be sent a formal letter of engagement to officially begin your Evolve X internship.",
   },
 ];
