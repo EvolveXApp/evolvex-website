@@ -1,6 +1,11 @@
+.header-text
+{
+    padding-left: 20px;
+}
+
 .header-heading
 {
-    width: 750px;    
+    width: 674px;    
     height: 54.78px;
     font-family: Gilroy;
     font-style: normal;
@@ -15,6 +20,7 @@
 {
     height: 456px;
     background: #010001;
+    position: relative;
 }
 
 .period
@@ -50,10 +56,12 @@
 {
     width: 518px;
     height: 344px;
+    margin-top: 15px;
 }
 
 #header-image-resources
 {
+    margin-left: 40px;
     width: 315px;
     height: 268px;
 }
@@ -68,9 +76,85 @@
 
 .header-container
 {
-    width: 1256px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin: auto;
+}
+
+@media (max-width: 835px)
+{
+    .header-text
+    {
+        z-index: 10;
+        position: absolute;
+        left: 51px;
+        top:10px;
+    }
+
+    .header
+    {
+        height: 384px;   
+    }
+
+    .header-container
+    {
+        width: 835px;
+    } 
+
+    .header-heading
+    {
+        width: 381px;
+        height: 46.13px;
+        font-size: 28px;
+    }
+
+    .header-intro
+    {
+        width: 357px;
+        height: 120px;
+        font-size: 14px;;
+    }
+
+    #header-image-program-overview
+    {
+        width: 320px;
+        height: 238px;
+        position: absolute;
+        left: 427px;
+        top: 15px;
+    }
+
+    #header-image-contact
+    {
+        width: 400px;
+        height: 280px;
+        position: absolute;
+        left: 310px;
+        top: 15px;
+    }
+
+    #header-image-resources
+    {
+        position: absolute;
+        width: 263px;
+        height: 240px;
+        left: 501px;
+        top: 15px;
+        margin-left: 0px;
+    }
+
+    .period
+    {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .header-container
+    {
+        width: 375px;
+    } 
 }
