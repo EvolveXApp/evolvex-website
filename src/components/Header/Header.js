@@ -7,7 +7,7 @@ class Header extends Component
         return (
           <div className = "header">  
             <div className="header-container">
-                <div className="header-text">
+                <div className="header-text" id={this.props.headerText}>
                     <p className="header-heading">{this.props.heading}
                     <span className="period">.</span>
                     </p>

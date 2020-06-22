@@ -156,5 +156,75 @@
     .header-container
     {
         width: 375px;
+       
     } 
+
+    .header-text
+    {
+        z-index: 10;
+        position: absolute;
+        left: 10px;
+        top:85px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header
+    {
+        height: 384px;   
+        overflow: hidden;
+    }
+
+    .header-heading
+    {
+        width: 273px;
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom:0px ;
+        height: auto;
+    }
+
+    .header-intro
+    {
+        width: 332px;
+        height: 150px;
+        font-size: 17px;
+        line-height: 20px;
+
+    }
+
+  
+
+    #header-image-program-overview
+    {
+        width: 427px;
+        height: 238px;
+        position: absolute;
+        left: 35px;
+        top: -70px;
+    }
+
+    #header-image-contact
+    {
+        width: 360px;
+        height: 238px;
+        position: absolute;
+        left: 15px;
+        top: -40px;
+    }
+
+    #header-image-resources
+    {
+        position: absolute;
+        width: 169px;
+        height: 154px;
+        left: 205px;
+        top: -10px;
+        margin-left: 0px;
+    }
+
+    #header-text-contact .header-intro
+    {
+        font-size: 20px;
+    }
 }
