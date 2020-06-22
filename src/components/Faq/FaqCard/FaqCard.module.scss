@@ -1,6 +1,7 @@
 .qns {
   color: white;
 }
+
 .icon {
   width: 16px;
   height: 16px;
@@ -15,8 +16,19 @@
 
 .wrap {
   display: flex;
+  border-bottom: solid 1px white;
 }
 
 .qns {
   margin: 13px 30px 13px 0px;
+}
+
+.m_t_ans {
+  display: none;
+}
+
+@media(max-width:900px) {
+  .m_t_ans {
+    display: block;
+  }
 }
