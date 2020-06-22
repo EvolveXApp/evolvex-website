@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   list-style: none;
-  & > *:not(:last-child) {
+
+  &>*:not(:last-child) {
     margin-right: 5vw;
   }
 }

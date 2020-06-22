@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { ActiveNavBarLink } from "../NavBar/NavBarLink";
 
-export default function NavSideBar({}) {
+const NavSideBar = () => {
   return (
     <div className={styles.container} id="navSideBarContainer">
       <ActiveNavBarLink
@@ -40,4 +40,6 @@ export default function NavSideBar({}) {
       />
     </div>
   );
-}
+};
+
+export default NavSideBar;

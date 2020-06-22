@@ -5,22 +5,13 @@
     position: relative;
     z-index: 9999;
   }
+
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 4vw;
 
-    > :last-child {
-      display: none;
-    }
-  }
-}
 
-@media (max-width: 700px) {
-  .nav_container .nav {
-    > :last-child {
-      display: block;
-    }
   }
 }
