@@ -1,0 +1,15 @@
+.slideItemContainer {
+    background: #282828;
+    width: 100%;
+    padding: 70px 100px;
+
+}
+
+
+@media (max-width:900px) {
+    .slideItemContainer {
+        background: linear-gradient(258.83deg, #161616 -2.51%, #151515 94.27%);
+        padding: 40px 50px;
+
+    }
+}

@@ -4,8 +4,9 @@ import WeConnect from "../../components/WeConnect";
 import ApplicationForm from "../../components/ApplicationForm";
 import ImageList from "../../components/ImageList";
 import Testimonials from "../../components/Testimonials";
-import Layout from "../../components/Layout"
+import Layout from "../../components/Layout";
 import "./style.scss";
+import SliderSection from "../../components/SliderSection";
 
 class Home extends Component {
   render() {
@@ -13,10 +14,13 @@ class Home extends Component {
       <Layout>
         <Hero />
         <ImageList />
+        <SliderSection />
         <WeConnect />
         <Testimonials />
-        <ApplicationForm headerStyle="border-blue" heading="Your Career Awaits You" />
-        
+        <ApplicationForm
+          headerStyle="border-blue"
+          heading="Your Career Awaits You"
+        />
       </Layout>
     );
   }
