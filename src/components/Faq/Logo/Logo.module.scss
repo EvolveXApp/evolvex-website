@@ -2,10 +2,10 @@
     display: none;
 }
 
-@media (max-width:900px) {
+@media (max-width:1024px) {
 
     .container {
-        width: 70%;
+        width: 100%;
         text-align: center;
         display: block;
     }
@@ -19,7 +19,16 @@
         color: white;
         width: 50%;
         margin: 0 auto 50px;
+        font-family: "Gilroy";
+    }
+}
+
+@media (max-width:700px) {
+    .container {
+        width: 100%;
     }
 
-
+    .text {
+        width: 70%;
+    }
 }
