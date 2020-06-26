@@ -12,7 +12,9 @@ class SocialContact extends Component
               
               )}  
             
-            </div>    
+            </div>
+            
+    
         );
       }
 }

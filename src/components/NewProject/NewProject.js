@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+  import React,{Component} from "react";
 import "./newProject.scss";
 import ContactUs from "./ContactUs";
 import SocialContact from "./SocialContact";

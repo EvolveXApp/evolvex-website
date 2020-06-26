@@ -18,7 +18,7 @@
 
 .header
 {
-    height: 456px;
+    height: 400px;
     background: #010001;
     position: relative;
 }
@@ -151,7 +151,7 @@
     }
 }
 
-@media (max-width: 375px)
+@media (max-width: 480px)
 {
     .header-container
     {
@@ -163,7 +163,7 @@
     {
         z-index: 10;
         position: absolute;
-        left: 10px;
+        left: 0px;
         top:85px;
         display: flex;
         flex-direction: column;
