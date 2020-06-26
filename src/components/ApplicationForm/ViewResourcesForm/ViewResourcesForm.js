@@ -14,7 +14,9 @@ class ViewResourcesForm extends Component
                 our online resources in the meantime.
 
                 </p>
-                <input type="button" id="view-resources-submit-button" className="submitButton" value="View Resources" />
+                <div className="submit-button-container">
+                    <input type="button" id="view-resources-submit-button" className="submitButton" value="View Resources" />
+                </div>    
             
             </div>    
         );

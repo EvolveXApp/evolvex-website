@@ -94,7 +94,7 @@
 }
 
 
-@media (max-width: 375px)
+@media (max-width: 480px)
 {
     .form-container
     {
@@ -107,25 +107,35 @@
 
     .form-container div
     {
-        margin: 0px;
+        margin: auto;
         justify-content: center;
     }
 
     .fields
     {
         width: 300px;
-        margin: 25px 35px;
+        margin: 25px 0px;
     }
 
     .buttons
     {
-        margin: 25px 0px 25px 35px ;
+        margin: 25px 0px;
     }
 
     .submitButton
     {
         height: 35px;
-        margin: 56px 26%;
+        width: 140px;
+        font-size: 16px;
+        margin: 0px;
+        margin-bottom: 45px;
+    }
+
+    .submit-button-container
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
     }
 }
 

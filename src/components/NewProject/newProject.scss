@@ -6,7 +6,7 @@
     font-size: 32px;
     line-height: 40px;
     padding-top: 64px;
-    padding-bottom: 8px;
+    padding-bottom: 48px;
     width: 420px;
     height: 56px;
     text-align: center;
@@ -22,3 +22,45 @@
     margin-top: 70px;
 }
 
+
+@media (max-width: 1024px)
+{
+    
+
+    .new-project-container
+    {
+        flex-direction: column-reverse;
+    }
+
+    .new-project-container > div
+    {
+        width: 400px;
+        margin: auto;
+       
+    }
+}
+
+
+@media (max-width: 480px)
+{
+    .new-project-container
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .new-project-container > div
+    {
+        width: 100%;
+    }
+
+
+    .title
+    {
+        width: 332px;
+        height: 24px;
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+}

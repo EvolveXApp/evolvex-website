@@ -28,7 +28,9 @@ class NewProjectForm extends Component
                 
             </div>
            
-            <input className="submitButton" type="submit" value="Submit" />
+            <div className="submit-button-container">
+                <input className="submitButton" type="submit" value="Submit" />
+            </div>    
               
             
         </form>    

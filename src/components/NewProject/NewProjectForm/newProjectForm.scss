@@ -98,3 +98,53 @@ select::-ms-expand
     margin-top: 40px;
     justify-content: space-evenly;
 }
+
+@media (max-width: 1024px)
+{
+    .new-project-form
+    {
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 835px)
+{
+    .new-project-form
+    {
+        width: 732px;
+    }
+}
+
+@media (max-width:480px)
+{
+    .new-project-form-container
+    {
+        flex-direction: column;
+    }
+
+    .new-project-form
+    {
+        width: 100%;
+        height: 785px;
+    }
+
+    .project-resume
+    {
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    .new-project-fields,
+    #field-email,
+    .text-style,
+    .new-project-type,
+    .project-textarea
+    {
+        width: 300px;
+    }
+
+    .text-fields
+    {
+        margin: auto;
+    }
+}

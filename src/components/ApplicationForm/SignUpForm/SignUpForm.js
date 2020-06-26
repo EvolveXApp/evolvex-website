@@ -44,8 +44,10 @@ class SignUpForm extends Component
                             </div>  
                             
                             
-                        </div>   
-                        <input type="button" className="submitButton" value="Submit" onClick ={() => this.handleFormSubmission()}/>
+                        </div> 
+                        <div className="submit-button-container">  
+                            <input type="button" className="submitButton" value="Submit" onClick ={() => this.handleFormSubmission()}/>
+                        </div>
                 </form>
                         
                 </div>
