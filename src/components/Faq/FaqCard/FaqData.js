@@ -43,7 +43,7 @@ export const FaqData = [
   },
   {
     id: 7,
-    question: "What are the next steps",
+    question: "What are the next steps?",
     answer:
       "Once you have accepted to participate in this program, the selected can- didates will be sent a formal letter of engagement to officially begin your Evolve X internship. Once you have accepted to participate in this program, the selected can- didates will be sent a formal letter of engagement to officially begin your Evolve X internship.",
   },
