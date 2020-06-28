@@ -1,65 +1,134 @@
-import React,{Component} from "react";
+import React, { Component } from "react";
 import "./form.scss";
 import ViewResourcesForm from "../ViewResourcesForm";
 
-class SignUpForm extends Component
-{
-    constructor(props)
-    {
-        super(props);
-        this.isFormNotSubmitted = this.handleFormSubmission.bind(this);
-        this.state = {isFormNotSubmitted: true};
-    }
+function encode(data) {
+  const formData = new FormData();
 
-    handleFormSubmission()
-    {
-        this.setState({isFormNotSubmitted: false});
-    }
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key]);
+  }
 
-    render(){
-        const isFormNotSubmitted = this.state.isFormNotSubmitted;
-        
-        if(isFormNotSubmitted)
-        {
-            return(
-                <div className="form-wrapper">
-                        
-                    <form className="form">
-                        <div className="form-container">
-                        <div>
-                                <input className="fields" type="text" value="" placeholder="Name" readOnly />
-                                
-                                <input className="fields" type="text" value="" placeholder="Email" readOnly />
-                                <input className="fields" type="text" value="" placeholder="Phone" readOnly />
-                                
-                                <input className="fields" type="text" value="" placeholder="Profession" readOnly />
-                            
-
-                            </div>
-                            <div>
-                                <input className="fields" type="text" value="" placeholder="Portfolio" readOnly />
-                                <input className="fields" type="text" value="" placeholder="LinkedIn" readOnly />
-                                <input className ="buttons" type="button" value="Resume / CV" />
-                                <input className="buttons" type="button" value="Cover Letter" />
-                            </div>  
-                            
-                            
-                        </div> 
-                        <div className="submit-button-container">  
-                            <input type="button" className="submitButton" value="Submit" onClick ={() => this.handleFormSubmission()}/>
-                        </div>
-                </form>
-                        
-                </div>
-            );
-        }
-        else
-        {
-            return(
-                <ViewResourcesForm />
-            );
-        }
-    }
+  return formData;
 }
-export default SignUpForm;
 
+export default class SignUpForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isFormNotSubmitted: true };
+  }
+
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleAttachment = (e) => {
+    this.setState({ [e.target.name]: e.target.files[0] });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state,
+      }),
+    })
+      .then(() => this.setState({ isFormNotSubmitted: false }))
+      .then(() => console.log(this.state, "hello"))
+
+      .catch((error) => alert(error));
+  };
+
+  render() {
+    const isFormNotSubmitted = this.state.isFormNotSubmitted;
+    if (isFormNotSubmitted) {
+      return (
+        <div className="form-wrapper">
+          <form
+            className="form"
+            name="apply"
+            method="post"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            onSubmit={this.handleSubmit}
+          >
+            <input type="hidden" name="bot-field" value="file-upload" />
+            <div className="form-container">
+              <div>
+                <input
+                  className="fields"
+                  type="text"
+                  placeholder="Name"
+                  name="Name"
+                  onChange={this.handleChange}
+                />
+
+                <input
+                  className="fields"
+                  type="text"
+                  placeholder="Email"
+                  name="Email"
+                  onChange={this.handleChange}
+                />
+                <input
+                  className="fields"
+                  type="text"
+                  placeholder="Phone"
+                  name="Phone"
+                  onChange={this.handleChange}
+                />
+
+                <input
+                  className="fields"
+                  type="text"
+                  placeholder="Profession"
+                  name="Profession"
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div>
+                <input
+                  className="fields"
+                  type="text"
+                  placeholder="Portfolio"
+                  name="Portfolio"
+                  onChange={this.handleChange}
+                />
+                <input
+                  className="fields"
+                  type="text"
+                  placeholder="LinkedIn"
+                  name="Linkedin"
+                  onChange={this.handleChange}
+                />
+
+                <input
+                  className="buttons"
+                  type="file"
+                  name="resume"
+                  onChange={this.handleAttachment}
+                />
+
+                <input
+                  className="buttons"
+                  type="file"
+                  name="cover_letter"
+                  onChange={this.handleAttachment}
+                />
+              </div>
+            </div>
+            <div className="submit-button-container">
+              <input type="submit" className="submitButton" value="Submit" />
+            </div>
+          </form>
+        </div>
+      );
+    } else {
+      return <ViewResourcesForm />;
+    }
+  }
+}
