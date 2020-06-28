@@ -56,6 +56,7 @@ export default class SignUpForm extends Component {
             onSubmit={this.handleSubmit}
           >
             <input type="hidden" name="form-name" value="apply" />
+            <input name="bot-field" />
             <div className="form-container">
               <div>
                 <input
