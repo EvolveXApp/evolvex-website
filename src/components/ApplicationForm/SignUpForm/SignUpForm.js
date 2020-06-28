@@ -53,10 +53,10 @@ export default class SignUpForm extends Component {
             name="apply"
             method="post"
             data-netlify="true"
-            netlify-honeypot="bot-field"
+            data-netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
           >
-            <input type="hidden" name="bot-field" value="file-upload" />
+            <input type="hidden" name="form-name" value="apply" />
             <div className="form-container">
               <div>
                 <input
