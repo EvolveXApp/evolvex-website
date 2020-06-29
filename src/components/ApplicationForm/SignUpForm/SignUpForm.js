@@ -43,6 +43,15 @@ export default class SignUpForm extends Component {
   };
 
   render() {
+    const { Resume, CoverLetter } = this.state;
+
+    let resumeName = Resume ? <span>{Resume.name}</span> : <span>Resume</span>;
+    let coverLetter = CoverLetter ? (
+      <span>{CoverLetter.name}</span>
+    ) : (
+      <span>Cover Letter</span>
+    );
+
     const isFormNotSubmitted = this.state.isFormNotSubmitted;
     if (isFormNotSubmitted) {
       return (
@@ -106,17 +115,24 @@ export default class SignUpForm extends Component {
                   onChange={this.handleChange}
                 />
 
+                <label for="files" className="buttons">
+                  {resumeName}
+                </label>
                 <input
-                  className="buttons"
+                  id="files"
+                  style={{ visibility: "hidden" }}
                   type="file"
-                  name="resume"
+                  name="Resume"
                   onChange={this.handleAttachment}
                 />
-
+                <label for="cover-letter" className="buttons">
+                  {coverLetter}
+                </label>
                 <input
-                  className="buttons"
+                  id="cover-letter"
+                  style={{ visibility: "hidden" }}
                   type="file"
-                  name="cover_letter"
+                  name="CoverLetter"
                   onChange={this.handleAttachment}
                 />
               </div>
