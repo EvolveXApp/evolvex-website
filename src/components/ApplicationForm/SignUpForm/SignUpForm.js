@@ -15,35 +15,74 @@ function encode(data) {
 export default class SignUpForm extends Component {
   constructor(props) {
     super(props);
-    this.state = { isFormNotSubmitted: true };
+    this.state = { isFormNotSubmitted: true, values: {}, error: "" };
   }
 
   handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
+    const target = e.target;
+    this.setState((prevState) => {
+      return {
+        values: {
+          ...prevState.values,
+          [target.name]: target.value,
+        },
+      };
+    });
   };
 
   handleAttachment = (e) => {
-    this.setState({ [e.target.name]: e.target.files[0] });
+    const target = e.target;
+    this.setState((prevState) => {
+      return {
+        values: {
+          ...prevState.values,
+          [target.name]: target.files[0],
+        },
+      };
+    });
+
+    // this.setState({ [e.target.name]: e.target.files[0] });
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state,
-      }),
-    })
-      .then(() => this.setState({ isFormNotSubmitted: false }))
-      .then(() => console.log(this.state, "hello"))
 
-      .catch((error) => alert(error));
+    let fieldValues = [
+      "Name",
+      "Email",
+      "Phone",
+      "Profession",
+      "Portfolio",
+      "Linkedin",
+      "Resume",
+      "CoverLetter",
+    ];
+
+    let empty = fieldValues.filter((value) => {
+      return !this.state.values[value];
+    });
+
+    if (!empty.length) {
+      const form = e.target;
+      fetch("/", {
+        method: "POST",
+        body: encode({
+          "form-name": form.getAttribute("name"),
+          ...this.state.values,
+        }),
+      })
+        .then(() => this.setState({ isFormNotSubmitted: false }))
+        .then(() => console.log(this.state, "hello"))
+
+        .catch((error) => alert(error));
+    } else {
+      return this.setState({ error: empty[0] + " required" });
+    }
   };
 
   render() {
-    const { Resume, CoverLetter } = this.state;
+    const { Resume, CoverLetter } = this.state.values;
+    const { error } = this.state;
 
     let resumeName = Resume ? <span>{Resume.name}</span> : <span>Resume</span>;
     let coverLetter = CoverLetter ? (
@@ -66,6 +105,7 @@ export default class SignUpForm extends Component {
           >
             <input type="hidden" name="form-name" value="apply" />
             <input type="hidden" name="bot-field" />
+
             <div className="form-container">
               <div>
                 <input
@@ -137,7 +177,12 @@ export default class SignUpForm extends Component {
                 />
               </div>
             </div>
-            <div className="submit-button-container">
+
+            <div
+              className="submit-button-container"
+              style={{ color: "red", marginLeft: "20px" }}
+            >
+              {error && error}
               <input type="submit" className="submitButton" value="Submit" />
             </div>
           </form>
