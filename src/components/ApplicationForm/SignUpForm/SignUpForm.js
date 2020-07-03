@@ -84,11 +84,11 @@ export default class SignUpForm extends Component {
     const { Resume, CoverLetter } = this.state.values;
     const { error } = this.state;
 
-    let resumeName = Resume ? <span>{Resume.name}</span> : <span>Resume</span>;
+    let resumeName = Resume ? <label for="files" id="label-resume" className="buttons-attachment"><p className="labels">{Resume.name}</p></label> :<label id="label-resume" for="files" className="buttons"> <p className="labels">Resume</p></label>;
     let coverLetter = CoverLetter ? (
-      <span>{CoverLetter.name}</span>
+    <label for="cover-letter" className="buttons-attachment">  <p className="labels">{CoverLetter.name}</p></label>
     ) : (
-      <span>Cover Letter</span>
+    <label for="cover-letter" className="buttons">  <p className="labels">Cover Letter</p> </label>
     );
 
     const isFormNotSubmitted = this.state.isFormNotSubmitted;
@@ -155,9 +155,9 @@ export default class SignUpForm extends Component {
                   onChange={this.handleChange}
                 />
 
-                <label for="files" className="buttons">
-                  {resumeName}
-                </label>
+                
+                {resumeName}
+                
                 <input
                   id="files"
                   style={{ visibility: "hidden" }}
@@ -165,9 +165,9 @@ export default class SignUpForm extends Component {
                   name="Resume"
                   onChange={this.handleAttachment}
                 />
-                <label for="cover-letter" className="buttons">
-                  {coverLetter}
-                </label>
+                
+                {coverLetter}
+     
                 <input
                   id="cover-letter"
                   style={{ visibility: "hidden" }}
@@ -176,13 +176,14 @@ export default class SignUpForm extends Component {
                   onChange={this.handleAttachment}
                 />
               </div>
+                  
+            </div>
+            <div className="error-field">
+                    {error && error}
             </div>
 
-            <div
-              className="submit-button-container"
-              style={{ color: "red", marginLeft: "20px" }}
-            >
-              {error && error}
+            <div className="submit-button-container">
+              
               <input type="submit" className="submitButton" value="Submit" />
             </div>
           </form>
