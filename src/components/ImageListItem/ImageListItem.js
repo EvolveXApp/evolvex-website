@@ -1,10 +1,8 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-import style from "./styles.js";
 import styles from "./styles.module.scss";
 
 const ImageListItem = (props) => {
-  const { data, classes } = props;
+  const { data } = props;
   const backgroundColours = ["#3671B7", "#ECB71F", "#DE1C54"];
   let colourValue = 0;
   const handleColour = () => {
@@ -17,22 +15,20 @@ const ImageListItem = (props) => {
           <div
             style={{ backgroundColor: backgroundColours[colourValue] }}
             className={
-              item.position % 2 === 0
-                ? classes.flipImage
-                : classes.imageContainer
+              item.position % 2 === 0 ? styles.flipImage : styles.imageContainer
             }
           >
             <img src={item.image} alt={item.title} title={item.title} />
           </div>
           <div
             className={
-              item.id % 2 === 0 ? classes.flipText : classes.textContainer
+              item.id % 2 === 0 ? styles.flipText : styles.textContainer
             }
           >
-            <div className={classes.titleContainer}>
-              <p className={classes.title}>{item.title}</p>
+            <div className={styles.titleContainer}>
+              <p className={styles.title}>{item.title}</p>
             </div>
-            <p className={classes.description}>{item.description}</p>
+            <p className={styles.description}>{item.description}</p>
           </div>
           {handleColour()}
         </div>
@@ -41,4 +37,4 @@ const ImageListItem = (props) => {
   );
 };
 
-export default withStyles(style)(ImageListItem);
+export default ImageListItem;
