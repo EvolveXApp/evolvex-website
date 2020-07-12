@@ -2,25 +2,29 @@ footer {
   background: black;
 
   .footerContent {
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-areas:
       "logo contact links"
       "socicon contact links";
     gap: 2vw 4vw;
     padding: 45px 4vw;
+
     .logo {
       grid-area: logo;
     }
+
     .footer_socialLinks {
       grid-area: socicon;
     }
+
     .footer_contact {
       grid-area: contact;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .footer_pageLinks {
       grid-area: links;
       display: flex;
@@ -38,6 +42,7 @@ footer {
       "socicon links";
   }
 }
+
 @media (max-width: 700px) {
   footer .footerContent {
     padding: 25px 8vw;
@@ -45,6 +50,7 @@ footer {
       "logo"
       "contact"
       "socicon";
+
     .footer_pageLinks {
       display: none;
     }
