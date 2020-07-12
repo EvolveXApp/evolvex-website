@@ -1,0 +1,58 @@
+.container {
+  background-color: black;
+  padding: 50px 0;
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .imageContainer {
+    border-radius: 5;
+    position: relative;
+    margin: 50px 0;
+    padding: 0 35px 0 100px;
+    img {
+      transform: translate(0, -30px);
+    }
+  }
+
+  .flipImage {
+    display: grid;
+    order: 2;
+    border-radius: 5px;
+    position: relative;
+    margin: 50px 0;
+    padding: 0 100px 0 35px;
+    img {
+      transform: translate(0, -30px);
+    }
+  }
+
+  .fliptext {
+    display: grid;
+    padding: 0 0 0 500px;
+    order: 1;
+  }
+
+  .textContainer {
+    padding: 0 0 0 300px;
+  }
+
+  .titleContainer {
+    border-bottom: 2px solid #ecb71f;
+    width: 300px;
+
+    .title {
+      width: 90%;
+      color: #f1f1f1;
+      font-size: 24px;
+    }
+  }
+  .description {
+    width: 500px;
+    color: #939393;
+    font-size: 18px;
+  }
+}

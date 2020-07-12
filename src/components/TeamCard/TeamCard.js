@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import styles from "./styles";
-import { withStyles } from "@material-ui/core/styles";
+import styles from "./styles.module.scss";
 import Reveal from "react-reveal/Reveal";
 
 const TeamCard = ({ classes, member }) => {
   const [hoverDisplay, setHoverDisplay] = useState(false);
   return (
     <div
-      className={classes.container}
+      className={styles.container}
       onMouseOver={() => {
         setHoverDisplay(true);
       }}
@@ -17,13 +16,13 @@ const TeamCard = ({ classes, member }) => {
     >
       {hoverDisplay === false ? (
         <>
-          <div className={classes.profile}>
-            <div className={classes.textContainer}>
+          <div className={styles.profile}>
+            <div className={styles.textContainer}>
               <Reveal>
-                <h2 className={`${classes.text} ${classes.name}`}>
+                <h2 className={`${styles.text} ${styles.name}`}>
                   {member.name}
                 </h2>
-                <p className={`${classes.text} ${classes.title}`}>
+                <p className={`${styles.text} ${styles.title}`}>
                   {member.title}
                 </p>
               </Reveal>
@@ -32,11 +31,11 @@ const TeamCard = ({ classes, member }) => {
               <img
                 src={member.profileImage}
                 alt={member.name}
-                className={classes.profileImage}
+                className={styles.profileImage}
               />
             </Reveal>
           </div>
-          <svg width="230" height="260" className={classes.trapezoid}>
+          <svg width="230" height="260" className={styles.trapezoid}>
             <path
               fill="#3671B7"
               strokeWidth="7"
@@ -55,15 +54,15 @@ const TeamCard = ({ classes, member }) => {
       ) : (
         <>
           <Reveal>
-            <div className={classes.profileMOver}>
-              <div className={classes.textContainerMOver}>
+            <div className={styles.profileMOver}>
+              <div>
                 <h2
-                  className={`${classes.text} ${classes.name} ${classes.mouseOver}`}
+                  className={`${styles.text} ${styles.name} ${styles.mouseOver}`}
                 >
                   {member.name}
                 </h2>
                 <p
-                  className={`${classes.text} ${classes.title} ${classes.mouseOver}`}
+                  className={`${styles.text} ${styles.title} ${styles.mouseOver}`}
                 >
                   {member.title}
                 </p>
@@ -71,11 +70,11 @@ const TeamCard = ({ classes, member }) => {
               <img
                 src={member.profileImage}
                 alt={member.name}
-                className={classes.profileImageMOver}
+                className={styles.profileImageMOver}
               />
             </div>
             <div>
-              <p className={`${classes.text} ${classes.description}`}>
+              <p className={`${styles.text} ${styles.description}`}>
                 {member.description}
               </p>
             </div>
@@ -86,4 +85,4 @@ const TeamCard = ({ classes, member }) => {
   );
 };
 
-export default withStyles(styles)(TeamCard);
+export default TeamCard;
