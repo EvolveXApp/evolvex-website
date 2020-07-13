@@ -84,20 +84,20 @@ export default class SignUpForm extends Component {
     const { formName } = this.props;
 
     let resumeName = Resume ? (
-      <label for="files" id="label-resume" className="buttons-attachment">
+      <label htmlFor="files" id="label-resume" className="buttons-attachment">
         <p className="labels">{Resume.name}</p>
       </label>
     ) : (
-      <label id="label-resume" for="files" className="buttons">
+      <label id="label-resume" htmlFor="files" className="buttons">
         <p className="labels">Resume</p>
       </label>
     );
     let coverLetter = CoverLetter ? (
-      <label for="cover-letter" className="buttons-attachment">
+      <label htmlFor="cover-letter" className="buttons-attachment">
         <p className="labels">{CoverLetter.name}</p>
       </label>
     ) : (
-      <label for="cover-letter" className="buttons">
+      <label htmlFor="cover-letter" className="buttons">
         <p className="labels">Cover Letter</p>{" "}
       </label>
     );
