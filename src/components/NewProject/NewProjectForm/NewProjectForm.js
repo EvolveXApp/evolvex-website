@@ -4,11 +4,9 @@ import ViewResourcesForm from "../../ApplicationForm/ViewResourcesForm/ViewResou
 
 function encode(data) {
   const formData = new FormData();
-
   for (const key of Object.keys(data)) {
     formData.append(key, data[key]);
   }
-
   return formData;
 }
 
@@ -76,10 +74,7 @@ class NewProjectForm extends Component {
             value="Have a Project in mind?"
           />
           <input type="hidden" name="bot-field" />
-
           <div className="new-project-form-container">
-            {/* <form className="new-project-form">
-          <div className="new-project-form-container"> */}
             <div className="text-fields">
               <div>
                 <input
@@ -89,7 +84,6 @@ class NewProjectForm extends Component {
                   name="Name"
                   onChange={this.handleChange}
                 />
-
                 <input
                   className="new-project-fields"
                   type="text"
@@ -104,7 +98,6 @@ class NewProjectForm extends Component {
                   name="Phone"
                   onChange={this.handleChange}
                 />
-
                 <input
                   className="new-project-fields"
                   type="text"
@@ -114,7 +107,6 @@ class NewProjectForm extends Component {
                 />
               </div>
             </div>
-
             <div className="project-resume">
               <p className="text-style"> Project Type</p>
               <select className="new-project-type" defaultValue={"DEFAULT"}>
@@ -122,7 +114,6 @@ class NewProjectForm extends Component {
                   Select All That Apply
                 </option>
               </select>
-
               <p className="text-style">Tell Us About Your Project</p>
               <textarea
                 className="project-textarea"
@@ -133,7 +124,6 @@ class NewProjectForm extends Component {
             </div>
           </div>
           <div className="error-field">{error && error}</div>
-
           <div className="submit-button-container">
             <input className="submitButton" type="submit" value="Submit" />
           </div>
