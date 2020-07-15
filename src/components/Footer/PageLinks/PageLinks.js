@@ -9,7 +9,9 @@ export default function PageLinks() {
         <Link to="/" className={styles.mainLink}>
           Home
         </Link>
-        <Link className={styles.subLink}>Apply</Link>
+        <a href="#sign-up-section" className={styles.subLink}>
+          Apply
+        </a>
       </div>
       <div className={styles.infoWrapper}>
         <div className={styles.mainLink}>About</div>
@@ -33,7 +35,9 @@ export default function PageLinks() {
           Contact
         </Link>
         <Link className={styles.subLink}>Partnerships</Link>
-        <Link className={styles.subLink}>Evolvex</Link>
+        <a href="https://evolvex.org/" className={styles.subLink}>
+          Evolvex
+        </a>
       </div>
     </div>
   );
