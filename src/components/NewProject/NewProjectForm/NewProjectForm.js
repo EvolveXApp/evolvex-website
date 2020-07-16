@@ -31,7 +31,7 @@ class NewProjectForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    let fieldValues = ["Name", "Email", "Phone", "Company-Name"];
+    let fieldValues = ["Name", "Email", "Phone", "Company-Name", "textarea"];
 
     let empty = fieldValues.filter((value) => {
       return !this.state.values[value];
@@ -54,7 +54,7 @@ class NewProjectForm extends Component {
   };
 
   render() {
-    const { error } = this.state;
+    const { value, error } = this.state;
     const { formName } = this.props;
 
     const isFormNotSubmitted = this.state.isFormNotSubmitted;
@@ -117,10 +117,10 @@ class NewProjectForm extends Component {
               <p className="text-style">Tell Us About Your Project</p>
               <textarea
                 className="project-textarea"
-                id="w3review"
-                rows="8"
-                cols="25"
-              ></textarea>
+                name="textarea"
+                value={value}
+                onChange={this.handleChange}
+              />
             </div>
           </div>
           <div className="error-field">{error && error}</div>
