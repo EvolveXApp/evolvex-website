@@ -31,7 +31,13 @@ class NewProjectForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    let fieldValues = ["Name", "Email", "Phone", "Company-Name", "textarea"];
+    let fieldValues = [
+      "Name",
+      "Email",
+      "Phone",
+      "Company-Name",
+      "tell-us-about-your-project",
+    ];
 
     let empty = fieldValues.filter((value) => {
       return !this.state.values[value];
@@ -117,7 +123,7 @@ class NewProjectForm extends Component {
               <p className="text-style">Tell Us About Your Project</p>
               <textarea
                 className="project-textarea"
-                name="textarea"
+                name="tell-us-about-your-project"
                 value={value}
                 onChange={this.handleChange}
               />
