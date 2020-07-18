@@ -1,3 +1,60 @@
+// .container {
+//   background-color: black;
+//   padding: 50px 0;
+
+//   .item {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: row;
+//   }
+
+//   .imageContainer {
+//     border-radius: 5px;
+//     position: relative;
+//     margin: 50px 0;
+//     padding: 0 35px 0 100px;
+//     img {
+//       transform: translate(0, -30px);
+//     }
+//   }
+
+//   .flipImage {
+//     display: grid;
+//     order: 2;
+//     border-radius: 5px;
+//     position: relative;
+//     margin: 50px 0;
+//     padding: 0 100px 0 35px;
+//     img {
+//       transform: translate(0, -30px);
+//     }
+//   }
+
+//   .flipText {
+//     padding: 0 20px 0 200px;
+//   }
+
+//   .textContainer {
+//     padding: 0 200px 0 20px;
+//   }
+
+//   .titleContainer {
+//     border-bottom: 2px solid #ecb71f;
+//     width: 300px;
+
+//     .title {
+//       width: 90%;
+//       color: #f1f1f1;
+//       font-size: 24px;
+//     }
+//   }
+//   .description {
+//     width: 500px;
+//     color: #939393;
+//     font-size: 18px;
+//   }
+// }
+
 .container {
   background-color: black;
   padding: 50px 0;
@@ -5,64 +62,63 @@
   .item {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .imageContainer {
     border-radius: 5;
     position: relative;
-    margin: 50px 0;
-    padding: 0 35px 0 100px;
+    margin: 30px 0 0 0;
+    text-align: center;
     img {
       transform: translate(0, -30px);
+      width: 90%;
     }
   }
 
   .flipImage {
-    display: grid;
-    order: 2;
-    border-radius: 5px;
+    border-radius: 5;
     position: relative;
-    margin: 50px 0;
-    padding: 0 100px 0 35px;
+    margin: 30px 0 0 0;
+    text-align: center;
     img {
       transform: translate(0, -30px);
+      width: 90%;
     }
   }
 
   .flipText {
-    padding: 0 20px 0 200px;
+    padding: 20px;
   }
 
   .textContainer {
-    padding: 0 200px 0 20px;
+    padding: 20px;
   }
 
   .titleContainer {
     border-bottom: 2px solid #ecb71f;
-    width: 300px;
 
     .title {
       width: 90%;
       color: #f1f1f1;
-      font-size: 24px;
+      font-size: 2rem;
     }
   }
   .description {
-    width: 500px;
     color: #939393;
     font-size: 18px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 700px) {
   .container {
+    background-color: blue;
     width: 100%;
   }
 }
-
-@media (max-width: 700px) {
+@media (min-width: 1024px) {
   .container {
     width: 100%;
+    background-color: red;
   }
 }
