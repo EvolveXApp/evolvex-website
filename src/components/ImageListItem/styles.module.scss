@@ -30,14 +30,12 @@
     }
   }
 
-  .fliptext {
-    display: grid;
-    padding: 0 0 0 500px;
-    order: 1;
+  .flipText {
+    padding: 0 20px 0 200px;
   }
 
   .textContainer {
-    padding: 0 0 0 300px;
+    padding: 0 200px 0 20px;
   }
 
   .titleContainer {
@@ -54,5 +52,17 @@
     width: 500px;
     color: #939393;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
   }
 }
