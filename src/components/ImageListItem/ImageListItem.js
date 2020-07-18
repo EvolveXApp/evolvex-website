@@ -15,18 +15,14 @@ const ImageListItem = (props) => {
           <div
             style={{ backgroundColor: backgroundColours[colourValue] }}
             className={
-              window.innerWidth > 700 && item.position % 2 === 0
-                ? styles.flipImage
-                : styles.imageContainer
+              item.position % 2 === 0 ? styles.flipImage : styles.imageContainer
             }
           >
             <img src={item.image} alt={item.title} title={item.title} />
           </div>
           <div
             className={
-              window.innerWidth > 700 && item.position % 2 === 0
-                ? styles.flipText
-                : styles.textContainer
+              item.position % 2 === 0 ? styles.flipText : styles.textContainer
             }
           >
             <div className={styles.titleContainer}>
