@@ -62,7 +62,7 @@ const TeamCard = ({ classes, member }) => {
                   {member.name}
                 </h2>
                 <p
-                  className={`${styles.text} ${styles.title} ${styles.mouseOver}`}
+                  className={`${styles.text} ${styles.title} ${styles.mouseOver} ${styles.mouseOverTitle}`}
                 >
                   {member.title}
                 </p>
