@@ -123,25 +123,27 @@
 
     .imageContainer {
       order: 1;
+      margin-top: 100px;
       margin-right: 100px;
       height: 20vw;
       padding: 0;
-      padding-left: 150px;
+      padding-left: 75px;
       img {
-        width: 90%;
-        height: 95%;
+        height: 100%;
+        width: 30vw;
       }
     }
 
     .flipImage {
       order: 2;
+      margin-top: 100px;
       height: 20vw;
       margin-left: 100px;
       padding: 0;
-      padding-right: 150px;
+      padding-right: 75px;
       img {
-        width: 90%;
-        height: 95%;
+        height: 100%;
+        width: 30vw;
       }
     }
 
@@ -167,6 +169,23 @@
 
       .title {
         font-size: 1.75rem;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    .imageContainer {
+      img {
+        width: 90%;
+        height: 95%;
+      }
+    }
+
+    .flipImage {
+      img {
+        width: 90%;
+        height: 95%;
       }
     }
   }
