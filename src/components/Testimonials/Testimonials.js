@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 
 const Testimonials = ({ classes, data }) => {
   const backgroundColours = ["#3671B7", "#ECB71F", "#DE1C54"];
   const offSetMargins = [0, 80, 160];
   let cardValue = -1;
-  return (
+  const [isMobile, setMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      window.innerWidth < 700 && isMobile === false && setMobile(true);
+      window.innerWidth > 700 && isMobile === true && setMobile(false);
+    };
+
+    window.addEventListener("resize", handleResize);
+  });
+
+  return isMobile ? (
+    <div>MObiel only</div>
+  ) : (
     <div className={styles.container}>
       <div className={styles.testimonials}>
         {data.map((items, index) => {

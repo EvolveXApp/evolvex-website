@@ -1,3 +1,62 @@
+// .container {
+//   background-color: #111111;
+
+//   .testimonials {
+//     display: flex;
+//     justify-content: center;
+//     padding-bottom: 50px;
+//   }
+// }
+// .section {
+//   margin: 0 15px;
+
+//   .cardTitle {
+//     font-size: 5rem;
+//     font-weight: 600;
+//     text-shadow: white -2px 1px;
+//     color: #3671b7;
+//     text-align: center;
+//   }
+
+//   .card {
+//     max-height: 450px;
+//     margin: 0 auto;
+//     border-radius: 5px;
+//     margin-top: 35px;
+//     text-align: center;
+//     width: 300px;
+//     background-color: white;
+//     padding: 25px;
+//   }
+
+//   .profile {
+//     width: 125px;
+//     border-radius: 50%;
+//   }
+
+//   .nameContainer {
+//     margin: 0 auto;
+//     max-width: 250px;
+//     border-bottom: 2px solid #d7e3f1;
+//   }
+
+//   .name {
+//     margin-bottom: 5px;
+//   }
+
+//   .title {
+//     margin: 5px;
+//     font-size: 0.9rem;
+//     color: #d3d3d3;
+//     font-weight: 500px;
+//   }
+
+//   .comment {
+//     font-size: 1.05rem;
+//     color: #7b7b7b;
+//     font-weight: 400;
+//   }
+// }
 .container {
   background-color: #111111;
 
@@ -56,4 +115,9 @@
     color: #7b7b7b;
     font-weight: 400;
   }
+}
+
+@media (min-width: 700px) {
+}
+@media (min-width: 1024px) {
 }
