@@ -5,7 +5,7 @@ const Testimonials = ({ classes, data }) => {
   const backgroundColours = ["#3671B7", "#ECB71F", "#DE1C54"];
   const offSetMargins = [0, 80, 160];
   let cardValue = -1;
-  const [isMobile, setMobile] = useState(false);
+  const [isMobile, setMobile] = useState(true);
   useEffect(() => {
     const handleResize = () => {
       window.innerWidth < 700 && isMobile === false && setMobile(true);
@@ -16,7 +16,10 @@ const Testimonials = ({ classes, data }) => {
   });
 
   return isMobile ? (
-    <div>MObiel only</div>
+    <div>
+      MObiel only
+      {window.innerWidth > 700 && setMobile(false)}
+    </div>
   ) : (
     <div className={styles.container}>
       <div className={styles.testimonials}>
