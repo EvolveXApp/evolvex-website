@@ -8,18 +8,15 @@ const Testimonials = ({ classes, data }) => {
   const [isMobile, setMobile] = useState(true);
   useEffect(() => {
     const handleResize = () => {
-      window.innerWidth < 700 && isMobile === false && setMobile(true);
-      window.innerWidth > 700 && isMobile === true && setMobile(false);
+      window.innerWidth < 700 && setMobile(true);
+      window.innerWidth > 700 && setMobile(false);
     };
 
     window.addEventListener("resize", handleResize);
-  });
+  }, [isMobile]);
 
   return isMobile ? (
-    <div>
-      MObiel only
-      {window.innerWidth > 700 && setMobile(false)}
-    </div>
+    <div>MObiel only</div>
   ) : (
     <div className={styles.container}>
       <div className={styles.testimonials}>
