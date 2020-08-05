@@ -67,20 +67,8 @@
   }
 
   .testimonials {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-  }
-}
-.section {
-  margin: 0 15px;
-
-  .cardTitle {
-    font-size: 5rem;
-    font-weight: 600;
-    text-shadow: white -2px 1px;
-    color: #3671b7;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .card {
@@ -124,6 +112,21 @@
 }
 
 @media (min-width: 700px) {
+  .container {
+    .testimonials {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
+
+    .cardTitle {
+      font-size: 5rem;
+      font-weight: 600;
+      text-shadow: white -2px 1px;
+      color: #3671b7;
+      text-align: center;
+    }
+  }
 }
 @media (min-width: 1024px) {
 }
