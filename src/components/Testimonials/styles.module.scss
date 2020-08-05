@@ -60,6 +60,12 @@
 .container {
   background-color: #111111;
 
+  .titleContainer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .testimonials {
     display: flex;
     justify-content: center;
