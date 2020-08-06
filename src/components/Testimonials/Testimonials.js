@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
+import Fade from "react-reveal/Fade";
 
 const Testimonials = ({ data }) => {
   const backgroundColours = ["#3671B7", "#ECB71F", "#DE1C54"];
@@ -34,7 +35,7 @@ const Testimonials = ({ data }) => {
           );
         })}
       </div>
-      <div className={styles.testimonials}>
+      <div className={styles.testimonials} id={"testimonials"}>
         {data.map((items, index) => {
           cardValue === 2 ? (cardValue = 0) : cardValue++;
           if ((showMore === true && index > 0) || index === 0) {
@@ -42,47 +43,54 @@ const Testimonials = ({ data }) => {
               <div>
                 {items.testimonials.map((testimonial, index) => {
                   return (
-                    <div
-                      className={styles.card}
-                      key={index}
-                      style={{
-                        boxShadow: `5px 2px 20px ${backgroundColours[cardValue]}`,
-                      }}
-                    >
-                      <img
-                        className={styles.profile}
-                        src={testimonial.profile}
-                        alt={testimonial.name}
-                      />
-                      <div className={styles.nameContainer}>
-                        <h2 className={styles.name}>{testimonial.name}</h2>
+                    <Fade spy={showMore}>
+                      <div
+                        className={styles.card}
+                        key={index}
+                        style={{
+                          boxShadow: `5px 2px 20px ${backgroundColours[cardValue]}`,
+                        }}
+                      >
+                        <img
+                          className={styles.profile}
+                          src={testimonial.profile}
+                          alt={testimonial.name}
+                        />
+                        <div className={styles.nameContainer}>
+                          <h2 className={styles.name}>{testimonial.name}</h2>
+                        </div>
+                        <p className={styles.title}>{testimonial.title}</p>
+                        <p className={styles.comment}>
+                          "{testimonial.comment}"
+                        </p>
                       </div>
-                      <p className={styles.title}>{testimonial.title}</p>
-                      <p className={styles.comment}>"{testimonial.comment}"</p>
-                    </div>
+                    </Fade>
                   );
                 })}
               </div>
             );
           }
+          return <div></div>;
         })}
-        {showMore === false ? (
-          <button
-            onClick={() => {
-              setShowMore(true);
-            }}
-          >
-            Show More
-          </button>
-        ) : (
-          <button
-            onClick={() => {
-              setShowMore(false);
-            }}
-          >
-            Show Less
-          </button>
-        )}
+        <a href="#testimonials">
+          {showMore === false ? (
+            <button
+              onClick={() => {
+                setShowMore(true);
+              }}
+            >
+              Show More
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                setShowMore(false);
+              }}
+            >
+              Show Less
+            </button>
+          )}
+        </a>
       </div>
     </div>
   ) : (
