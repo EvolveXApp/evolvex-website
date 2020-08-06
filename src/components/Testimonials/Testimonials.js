@@ -72,9 +72,10 @@ const Testimonials = ({ data }) => {
           }
           return <div></div>;
         })}
-        <a href="#testimonials">
+        <a href="#testimonials" className={styles.buttonContainer}>
           {showMore === false ? (
             <button
+              className={styles.button}
               onClick={() => {
                 setShowMore(true);
               }}
@@ -83,6 +84,7 @@ const Testimonials = ({ data }) => {
             </button>
           ) : (
             <button
+              className={styles.button}
               onClick={() => {
                 setShowMore(false);
               }}
