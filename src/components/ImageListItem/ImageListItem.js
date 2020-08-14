@@ -22,7 +22,7 @@ const ImageListItem = (props) => {
           </div>
           <div
             className={
-              item.id % 2 === 0 ? styles.flipText : styles.textContainer
+              item.position % 2 === 0 ? styles.flipText : styles.textContainer
             }
           >
             <div className={styles.titleContainer}>
