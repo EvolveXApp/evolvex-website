@@ -173,7 +173,24 @@
 }
 @media (min-width: 1024px) {
   .container {
-    .testimonials {
+    .cardTitle {
+      font-size: 5rem;
+    }
+
+    .card {
+      max-width: 350px;
+    }
+
+    .profile {
+      width: 150px;
+    }
+
+    .name {
+      font-size: 24px;
+    }
+
+    .comment {
+      max-height: 200px;
     }
   }
 }
