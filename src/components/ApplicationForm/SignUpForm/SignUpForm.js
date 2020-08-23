@@ -72,8 +72,6 @@ export default class SignUpForm extends Component {
         }),
       })
         .then(() => this.setState({ isFormNotSubmitted: false }))
-        .then(() => console.log(this.state, "hello"))
-
         .catch((error) => alert(error));
     } else {
       return this.setState({ error: empty[0] + " required" });
@@ -83,12 +81,25 @@ export default class SignUpForm extends Component {
   render() {
     const { Resume, CoverLetter } = this.state.values;
     const { error } = this.state;
+    const { formName } = this.props;
 
-    let resumeName = Resume ? <label for="files" id="label-resume" className="buttons-attachment"><p className="labels">{Resume.name}</p></label> :<label id="label-resume" for="files" className="buttons"> <p className="labels">Resume</p></label>;
-    let coverLetter = CoverLetter ? (
-    <label for="cover-letter" className="buttons-attachment">  <p className="labels">{CoverLetter.name}</p></label>
+    let resumeName = Resume ? (
+      <label htmlFor="files" id="label-resume" className="buttons-attachment">
+        <p className="labels">{Resume.name}</p>
+      </label>
     ) : (
-    <label for="cover-letter" className="buttons">  <p className="labels">Cover Letter</p> </label>
+      <label id="label-resume" htmlFor="files" className="buttons">
+        <p className="labels">Resume</p>
+      </label>
+    );
+    let coverLetter = CoverLetter ? (
+      <label htmlFor="cover-letter" className="buttons-attachment">
+        <p className="labels">{CoverLetter.name}</p>
+      </label>
+    ) : (
+      <label htmlFor="cover-letter" className="buttons">
+        <p className="labels">Cover Letter</p>{" "}
+      </label>
     );
 
     const isFormNotSubmitted = this.state.isFormNotSubmitted;
@@ -97,7 +108,7 @@ export default class SignUpForm extends Component {
         <div className="form-wrapper">
           <form
             className="form"
-            name="apply"
+            name={formName}
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
@@ -155,9 +166,8 @@ export default class SignUpForm extends Component {
                   onChange={this.handleChange}
                 />
 
-                
                 {resumeName}
-                
+
                 <input
                   id="files"
                   style={{ visibility: "hidden" }}
@@ -165,9 +175,9 @@ export default class SignUpForm extends Component {
                   name="Resume"
                   onChange={this.handleAttachment}
                 />
-                
+
                 {coverLetter}
-     
+
                 <input
                   id="cover-letter"
                   style={{ visibility: "hidden" }}
@@ -176,14 +186,10 @@ export default class SignUpForm extends Component {
                   onChange={this.handleAttachment}
                 />
               </div>
-                  
             </div>
-            <div className="error-field">
-                    {error && error}
-            </div>
+            <div className="error-field">{error && error}</div>
 
             <div className="submit-button-container">
-              
               <input type="submit" className="submitButton" value="Submit" />
             </div>
           </form>

@@ -12,7 +12,7 @@ class ApplicationForm extends Component {
         </p>
         <div className="application-form-container">
           <Logo />
-          <SignUpForm />
+          <SignUpForm formName="apply" />
         </div>
       </div>
     );

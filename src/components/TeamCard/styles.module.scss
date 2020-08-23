@@ -1,0 +1,188 @@
+.container {
+  background: #121212;
+  margin: 20px;
+  height: 250px;
+  position: relative;
+  border-radius: 5px;
+
+  .profile {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .textContainer {
+    z-index: 2;
+  }
+
+  .text {
+    color: white;
+  }
+
+  .name {
+    width: 120%;
+    max-width: 200px;
+    flex-wrap: true;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+  }
+
+  .title {
+    font-weight: 400;
+    color: #c1d2ee;
+  }
+
+  .profileImage {
+    margin: 30px 0;
+    border-radius: 50%;
+    z-index: 2;
+    width: 175px;
+    height: 175px;
+    box-shadow: 5px 5px 20px black;
+  }
+
+  .trapezoid {
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+  }
+
+  .profileMOver {
+    display: flex;
+    justify-content: space-around;
+    background: #3671b7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .mouseOver {
+    margin: 0;
+  }
+
+  .profileImageMOver {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 5px 5px 20px black;
+    transform: translate(0, -20%);
+  }
+
+  .description {
+    text-align: center;
+    color: #c1d2ee;
+    margin: 10px auto;
+    max-width: 75%;
+    max-height: 125px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    margin: 20px auto;
+    height: 175px;
+    width: 30vw;
+
+    .profile {
+      height: 100%;
+
+      .textContainer {
+        margin: 0 10px;
+      }
+    }
+
+    .name {
+      width: 100%;
+      font-size: 18px;
+      margin: 0 auto;
+    }
+
+    .title {
+      margin: 5px auto;
+      font-size: 14px;
+    }
+
+    .profileImage {
+      margin: 20px 10px;
+      width: 125px;
+      height: 125px;
+    }
+
+    .trapezoid {
+      bottom: -60px;
+      left: -50px;
+      transform: scale(0.65);
+    }
+
+    .profileMOver {
+      height: 75px;
+    }
+
+    .mouseOver {
+      width: 100px;
+      margin: 0 10px;
+    }
+
+    .mouseOverTitle {
+      font-size: 12px;
+      margin: 5px auto;
+    }
+
+    .description {
+      height: 75px;
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    height: 200px;
+    width: 275px;
+
+    .profile {
+      .textContainer {
+        margin: 0 0 0 20px;
+      }
+    }
+
+    .name {
+      font-size: 18px;
+    }
+
+    .title {
+      font-size: 16px;
+    }
+
+    .profileImage {
+      margin: 20px 20px;
+      width: 150px;
+      height: 150px;
+    }
+
+    .trapezoid {
+      bottom: -50px;
+      left: -40px;
+      transform: scale(0.75);
+    }
+
+    .profileMOver {
+      height: 100px;
+      font-size: 16px;
+    }
+
+    .mouseOverTitle {
+      font-size: 14px;
+    }
+
+    .description {
+      height: 75px;
+      font-size: 16px;
+    }
+  }
+}

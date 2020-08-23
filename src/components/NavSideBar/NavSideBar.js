@@ -5,36 +5,27 @@ import { ActiveNavBarLink } from "../NavBar/NavBarLink";
 const NavSideBar = () => {
   return (
     <div className={styles.container} id="navSideBarContainer">
-      <ActiveNavBarLink
-        className={styles.mainNavLink}
-        exact
-        to="/"
-        title="Home"
-      />
+      <ActiveNavBarLink className={styles.mainNavLink} to="/" title="Home" />
       <div className={styles.aboutContainer}>
         <ActiveNavBarLink className={styles.mainNavLink} title="About" />
         <ActiveNavBarLink
           className={styles.subNavLink}
-          exact
           to="/ProgramOverview"
           title="Program Overview"
         />
         <ActiveNavBarLink
           className={styles.subNavLink}
-          exact
           to="/Team"
           title="Our Team"
         />
       </div>
       <ActiveNavBarLink
         className={styles.mainNavLink}
-        exact
         to="/Resources"
         title="Resources"
       />
       <ActiveNavBarLink
         className={styles.mainNavLink}
-        exact
         to="/Contact"
         title="Contact"
       />
