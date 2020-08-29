@@ -1,72 +1,109 @@
 import React, { Component } from "react";
 import Team from "./Team";
+
+import Iulia from "../../assets/team/Iuliatudor.png";
+import Jr from "../../assets/team/jrlopez.png";
+import Chris from "../../assets/team/chrisdohm.png";
+
+import Jeremy from "../../assets/team/jeremytran.png";
+import Uma from "../../assets/team/umarudanladi.png";
+import Garnet from "../../assets/team/garnetcampbell.png";
+
+import Michael from "../../assets/team/michaelzbeetnoff.png";
+import Lisa from "../../assets/team/lisabenford.png";
+import Cameron from "../../assets/team/cameronroberts.png";
+
+import Todd from "../../assets/team/toddduncan.png";
+import John from "../../assets/team/johnajeto.png";
+import Felipe from "../../assets/team/felipeviera.png";
 class TeamContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data: [
         {
-          profileImage: "https://picsum.photos/500",
-          name: "J.R. Lopez",
-          title: "Creative Director",
+          profileImage: Iulia,
+          name: "Iulia",
+          title: "Chief Executive Officer",
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
         },
         {
-          profileImage: "https://picsum.photos/500",
+          profileImage: Jr,
           name: "J.R. Lopez",
-          title: "Creative Director",
+          title: "Founder",
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
         },
         {
-          profileImage: "https://picsum.photos/500",
-          name: "J.R. Lopez",
-          title: "Creative Director",
+          profileImage: Chris,
+          name: "Chris Dohm",
+          title: "Chief Innovation Officer",
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
         },
         {
-          profileImage: "https://picsum.photos/500",
-          name: "J.R. Lopez",
-          title: "Creative Director",
+          profileImage: Jeremy,
+          name: "Jeremy Tran",
+          title: "Chief Design Officer",
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
         },
         {
-          profileImage: "https://picsum.photos/500",
-          name: "J.R. Lopez",
-          title: "Creative Director",
+          profileImage: Uma,
+          name: "Uma Rudanladi",
+          title: "Lead UX & UI Designer",
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
         },
         {
-          profileImage: "https://picsum.photos/500",
-          name: "J.R. Lopez",
-          title: "Creative Director",
+          profileImage: Garnet,
+          name: "Garnet Campbell",
+          title: "Chief Learning Officer",
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
         },
         {
-          profileImage: "https://picsum.photos/500",
-          name: "J.R. Lopez",
-          title: "Creative Director",
+          profileImage: Michael,
+          name: "Michael Zbeetnoff",
+          title: "Chief Technical Officer",
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
         },
         {
-          profileImage: "https://picsum.photos/500",
-          name: "J.R. Lopez",
-          title: "Creative Director",
+          profileImage: Lisa,
+          name: "Lisa Benford",
+          title: "Marketing Strategist",
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
         },
         {
-          profileImage: "https://picsum.photos/500",
-          name: "J.R. Lopez",
-          title: "Creative Director",
+          profileImage: Cameron,
+          name: "Cameron Roberts",
+          title: "Web & App Developer",
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
+        },
+        {
+          profileImage: Todd,
+          name: "Todd Duncan",
+          title: "Photography Director",
+          description:
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
+        },
+        {
+          profileImage: John,
+          name: "John Ajeto",
+          title: "Web Developer",
+          description:
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
+        },
+        {
+          profileImage: Felipe,
+          name: "Felipe Viera",
+          title: "Junior Graphic Designer",
+          description:
+            "A CEO connects clients to all available people and resources within the company. The CEO is our connector and operations manager.",
         },
       ],
     };

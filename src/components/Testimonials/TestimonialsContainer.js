@@ -1,29 +1,41 @@
 import React, { Component } from "react";
 import Testimonials from "./Testimonials";
+
+import Dominc from "../../assets/testimonials/domincduarte.png";
+import Peter from "../../assets/testimonials/terryanderson.png";
+import Anne from "../../assets/testimonials/annemacdonald.png";
+
+import Terry from "../../assets/testimonials/terryanderson.png";
+import Shiela from "../../assets/testimonials/shielaaini.png";
+import Frederick from "../../assets/testimonials/fredrickrowley.png";
+
+import Rosalina from "../../assets/testimonials/rosalinatacoma.png";
+import Phil from "../../assets/testimonials/phildallaz.png";
+import Tina from "../../assets/testimonials/tinaduarte.png";
 const data = [
   {
     title: "They",
     testimonials: [
       {
-        profile: "https://placeimg.com/300/300/people",
+        profile: Dominc,
         name: "Dominic Duarte",
         title: "UX Designer",
         comment:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. ",
+          "The Evolve X program gave me the recourses and experience needed to build my portfolio and land a job as intermediate level UX designer. The job search is finally over! Couldn’t have done it without evolve.",
       },
       {
-        profile: "https://placeimg.com/300/300/people",
-        name: "Terry Anderson",
-        title: "CEO of a Company",
+        profile: Peter,
+        name: "Peter Anderson",
+        title: "Business Owner",
         comment:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. ",
+          "The Evolve X program gave me the recourses and experience needed to build my portfolio and land a job as intermediate level UX designer. The job search is finally over! Couldn’t have done it without evolve.",
       },
       {
-        profile: "https://placeimg.com/300/300/people",
-        name: "Rosalina Tacoma",
-        title: "UI Designer",
+        profile: Anne,
+        name: "Anne Macdonald",
+        title: "Graphic Designer",
         comment:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. ",
+          "The Evolve X program gave me the recourses and experience needed to build my portfolio and land a job as intermediate level UX designer. The job search is finally over! Couldn’t have done it without evolve.",
       },
     ],
   },
@@ -31,25 +43,25 @@ const data = [
     title: "Love",
     testimonials: [
       {
-        profile: "https://placeimg.com/300/300/people",
-        name: "FirstName LastName",
-        title: "Web Developer",
+        profile: Terry,
+        name: "Terry Anderson",
+        title: "Business Owner",
         comment:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. ",
+          "The Evolve X program gave me the recourses and experience needed to build my portfolio and land a job as intermediate level UX designer. The job search is finally over! Couldn’t have done it without evolve.",
       },
       {
-        profile: "https://placeimg.com/300/300/people",
-        name: "FirstName LastName",
-        title: "App Developer",
+        profile: Shiela,
+        name: "Shiela Aini",
+        title: "Film Intern",
         comment:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. ",
+          "The Evolve X program gave me the recourses and experience needed to build my portfolio and land a job as intermediate level UX designer. The job search is finally over! Couldn’t have done it without evolve.",
       },
       {
-        profile: "https://placeimg.com/300/300/people",
-        name: "FirstName LastName",
-        title: "Somebody",
+        profile: Frederick,
+        name: "Fredrick Rowley",
+        title: "App Development Intern",
         comment:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. ",
+          "The Evolve X program gave me the recourses and experience needed to build my portfolio and land a job as intermediate level UX designer. The job search is finally over! Couldn’t have done it without evolve.",
       },
     ],
   },
@@ -57,25 +69,25 @@ const data = [
     title: "Us!",
     testimonials: [
       {
-        profile: "https://placeimg.com/300/300/people",
-        name: "FirstName LastName",
-        title: "Web Developer",
+        profile: Rosalina,
+        name: "Rosalina Tacoma",
+        title: "Web Development Intern",
         comment:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. ",
+          "The Evolve X program gave me the recourses and experience needed to build my portfolio and land a job as intermediate level UX designer. The job search is finally over! Couldn’t have done it without evolve.",
       },
       {
-        profile: "https://placeimg.com/300/300/people",
-        name: "FirstName LastName",
-        title: "App Developer",
+        profile: Phil,
+        name: "Phil Dallaz",
+        title: "Startup Investor",
         comment:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. ",
+          "The Evolve X program gave me the recourses and experience needed to build my portfolio and land a job as intermediate level UX designer. The job search is finally over! Couldn’t have done it without evolve.",
       },
       {
-        profile: "https://placeimg.com/300/300/people",
-        name: "FirstName LastName",
-        title: "Somebody",
+        profile: Tina,
+        name: "Tina Duarte",
+        title: "UI Design Intern",
         comment:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type book. ",
+          "The Evolve X program gave me the recourses and experience needed to build my portfolio and land a job as intermediate level UX designer. The job search is finally over! Couldn’t have done it without evolve.",
       },
     ],
   },
