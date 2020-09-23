@@ -55,7 +55,7 @@ const TeamCard = ({ classes, member }) => {
         <>
           <Reveal>
             <div className={styles.profileMOver}>
-              <div>
+              <div className={styles.mouseOverContainer}>
                 <h2
                   className={`${styles.text} ${styles.name} ${styles.mouseOver}`}
                 >
