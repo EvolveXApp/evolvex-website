@@ -89,7 +89,7 @@ export default class SignUpForm extends Component {
       </label>
     ) : (
       <label id="label-resume" htmlFor="files" className="buttons">
-        <p className="labels">Resume</p>
+        <p className="labels">Resume / CV</p>
       </label>
     );
     let coverLetter = CoverLetter ? (

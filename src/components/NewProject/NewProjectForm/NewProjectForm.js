@@ -82,7 +82,7 @@ class NewProjectForm extends Component {
           <input type="hidden" name="bot-field" />
           <div className="new-project-form-container">
             <div className="text-fields">
-              <div>
+              
                 <input
                   className="new-project-fields"
                   type="text"
@@ -111,7 +111,7 @@ class NewProjectForm extends Component {
                   name="Company-Name"
                   onChange={this.handleChange}
                 />
-              </div>
+             
             </div>
             <div className="project-resume">
               <p className="text-style"> Project Type</p>
