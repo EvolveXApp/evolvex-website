@@ -12,6 +12,7 @@
   line-height: 22px;
 
   &:hover {
+
     color: #eeb91f;
   }
 }
@@ -20,8 +21,12 @@
   padding-bottom: 4px;
   padding-top: 6px;
   border-bottom: 2px solid transparent;
+  text-decoration: none;
 }
 
-.activeNavLink:visited {
-  text-decoration: none;
+
+
+a {
+  color: white;
+  text-decoration: none !important;
 }
