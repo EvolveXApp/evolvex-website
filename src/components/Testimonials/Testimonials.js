@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Fade from "react-reveal/Fade";
 
 const Testimonials = ({ data }) => {
+  const isSSR = typeof window === "undefined";
   const backgroundColours = ["#3671B7", "#ECB71F", "#DE1C54"];
   const offSetMargins = [0, 80, 160];
   let cardValue = -1;
@@ -15,13 +16,15 @@ const Testimonials = ({ data }) => {
       window.innerWidth > 700 && setMobile(false);
     };
 
-    window.addEventListener("resize", handleResize);
+    if (!isSSR) {
+      window.addEventListener("resize", handleResize);
+    }
   }, [isMobile]);
 
   return isMobile ? (
     <div className={styles.container}>
       <div className={styles.titleContainer}>
-        {window.innerWidth > 700 && setMobile(false)}
+        {!isSSR && window.innerWidth > 700 && setMobile(false)}
         {data.map((items, index) => {
           titleValue === 2 ? (titleValue = 0) : titleValue++;
           return (
